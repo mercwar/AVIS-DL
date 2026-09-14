@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIS DATALAKE // MANIFEST INSPECTOR</title>
+    <style>
+        :root {
+            --bg-dark: #05070a;
+            --panel-bg: rgba(10, 15, 25, 0.85);
+            --cyan-neon: #00f0ff;
+            --orange-neon: #ff6600;
+            --text-main: #c0e0ff;
+            --border-glow: rgba(0, 240, 255, 0.3);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Consolas', 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.05) 0%, transparent 70%),
+                radial-gradient(circle at 20% 20%, rgba(255, 102, 0, 0.05) 0%, transparent 50%);
+        }
+
+        .viewport {
+            width: 900px;
+            height: 600px;
+            background: var(--panel-bg);
+            border: 1px solid var(--cyan-neon);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.2), inset 0 0 15px rgba(0, 0, 0, 0.8);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hud-header {
+            background: rgba(0, 240, 255, 0.1);
+            border-bottom: 1px solid var(--cyan-neon);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hud-title {
+            color: var(--cyan-neon);
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-shadow: 0 0 8px var(--cyan-neon);
+        }
+
+        .hud-status {
+            color: var(--orange-neon);
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .json-card {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid var(--border-glow);
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        pre {
+            margin: 0;
+            color: #a0d0ff;
+            font-size: 13px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .key { color: var(--cyan-neon); }
+        .string { color: #88ff88; }
+        .number { color: #ff88ff; }
+        .boolean { color: var(--orange-neon); }
+
+        .stargate-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            color: var(--bg-dark);
+            background: var(--cyan-neon);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px var(--cyan-neon);
+            transition: all 0.2s ease;
+        }
+
+        .stargate-link:hover {
+            background: var(--orange-neon);
+            box-shadow: 0 0 12px var(--orange-neon);
+        }
+    </style>
+</head>
+<body>
+
+<div class="viewport">
+    <div class="hud-header">
+        <span class="hud-title">AVIS DATALAKE // MANIFEST VIEW</span>
+        <span class="hud-status" id="target-path">Target: 10-tutorial.json</span>
+    </div>
+    <div class="content-area">
+        <div class="json-card">
+            <pre id="json-display">Loading manifest stream...</pre>
+        </div>
+        <div id="action-area"></div>
+    </div>
+</div>
+
+<script>
+    const targetUrl = "/AVIS-DL/dl/2026/09/14/10-tutorial.json";
+    
+    // Fallback static JSON structure
+    const fallbackData = {
+        "method": "add",
+        "file": {
+            "title": "tutorial"
+        },
+        "owner": {
+            "system_id": "tutorial",
+            "team": "",
+            "contact_email": ""
+        },
+        "id": "tutorial",
+        "lifecycle": {
+            "version": "v1.0.0"
+        },
+        "location": {
+            "protocol": "https"
+        },
+        "url": {
+            "full": "https://mercwar.github.io/Quasar/index.html?quasar=AVIS-DL%2Fdl%2F2026%2F09%2F14%2F9-Tutorial.quasar",
+            "description": "Basic Stargate Deployment",
+            "adl": ""
+        },
+        "usage": {
+            "notes": ""
+        },
+        "home": {
+            "payload_content": "[Externalized to companion SOURCE file asset]"
+        },
+        "modified": "2026-09-14T21:07:09+00:00"
+    };
+
+    function renderJSON(data) {
+        const display = document.getElementById("json-display");
+        display.textContent = JSON.stringify(data, null, 4);
+
+        if (data.url && data.url.full) {
+            const actionArea = document.getElementById("action-area");
+            actionArea.innerHTML = `<a href="${data.url.full}" class="stargate-link" target="_self">ENGAGE STARGATE GATEWAY &rarr;</a>`;
+        }
+    }
+
+    // Attempt live fetch, fallback to embedded payload on error
+    fetch(targetUrl + `?t=${Date.now()}`)
+        .then(res => res.ok ? res.json() : Promise.reject(res.status))
+        .then(data => renderJSON(data))
+        .catch(err => {
+            console.warn("[AVIS STREAM]: Fetch unresolvable, mounting localized payload fallback.", err);
+            renderJSON(fallbackData);
+        });
+</script>
+
+</body>
+</html>
