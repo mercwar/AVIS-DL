@@ -1,0 +1,26 @@
+{
+    "file": {
+        "title": "tutorial"
+    },
+    "owner": {
+        "system_id": "mercwar",
+        "team": "",
+        "contact_email": ""
+    },
+    "id": "tutorial",
+    "lifecycle": {
+        "version": "v1.0.0"
+    },
+    "home": {
+        "realm": "AVIS-PRIMARY-CORE",
+        "host_node": "PHOTON-1",
+        "stream_class": "adl_development_avis",
+        "runtime_ecosystem": "web-personal-profile",
+        "alpha": "cyborg",
+        "payload_content": "[Externalized to companion CYBORG file asset]"
+    },
+    "usage": {
+        "notes": ""
+    },
+    "modified": "2026-09-14T15:41:38+00:00"
+}
