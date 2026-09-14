@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVIS Matrix - Node 14 Pipeline Dashboard</title>
+    <title>AVIS Matrix Engine - 2-tutorial Hub</title>
     <style>
         :root {
             --bg-main: #0d1117;
@@ -12,6 +12,7 @@
             --text-primary: #c9d1d9;
             --text-muted: #8b949e;
             --text-link: #58a6ff;
+            --accent-glow: rgba(56, 139, 253, 0.15);
             --accent-alert: #d29922;
         }
 
@@ -71,6 +72,14 @@
             line-height: 1.6;
             margin-bottom: 32px;
             color: #e3b341;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: 500;
         }
 
         table {
@@ -134,7 +143,7 @@
 
 <div class="wrapper">
     <div id="errorState"></div>
-    <div id="loadingState">OPENING SYSTEM DATA MATRIX // EXTRACTING RAW ARTIFACT AT NODE 14...</div>
+    <div id="loadingState">OPENING SYSTEM DATA MATRIX // INGESTING NODE 14...</div>
     
     <div class="panel" id="tutorialPanel" style="display: none;">
         <header>
@@ -145,18 +154,18 @@
                 </div>
             </div>
             <div class="meta-stamp">
-                Artifact Node: 14-tutorial<br>
+                Artifact Node: 2-tutorial<br>
                 Sync Stamp: <span id="tutModified"></span>
             </div>
         </header>
 
         <div class="disclaimer-box">
-            <strong>STORAGE PIPELINE NOTICE:</strong> This ecosystem runs completely open-access on the unauthenticated <code>AVIS-DL</code> repository track. There are no delete flags or modification options. All uploads possess an unalterable permanent face. Remediation requires deploying a fresh file sequence entry.
+            <strong>SECURITY NOTICE:</strong> This environment runs completely open-access with no login required. Consequently, there are no modification options or delete features. Every uploaded asset has a <u>permanent face</u> bound to its file name sequence and can never be altered once processed. Errors require creating and pushing an entirely new asset file.
         </div>
 
-        <h2>Live Decoupled Spreadsheet Stream (Parsed CSV File)</h2>
+        <h2>Parsed Tutorial Resource Records (Single Payload Source Execution)</h2>
         <table id="dataTable">
-            <!-- Data mapped on the fly -->
+            <!-- DHTML Grid Injection Point -->
         </table>
     </div>
 </div>
@@ -172,24 +181,27 @@
         const errorEl   = document.getElementById('errorState');
 
         try {
-            // Step 1: Open primary tracking index via AJAX
+            // Asynchronously query the master JSON record entry
             const response = await fetch('2-tutorial.json');
-            if (!response.ok) throw new Error(`HTTP Error [${response.status}]: ${response.statusText}`);
+
+            if (!response.ok) {
+                throw new Error(`AJAX Handshake Failed [HTTP ${response.status}]: ${response.statusText}`);
+            }
+
             const manifest = JSON.parse(await response.text());
             
-            // Populate administrative dashboard data fields
+            // Populate tracking data labels from your exact form keys
             document.getElementById('tutSubject').textContent  = `System Matrix: ${manifest.file?.title || 'Datalake Node'}`;
             document.getElementById('tutRealm').textContent    = manifest.home?.realm || 'AVIS-CORE';
             document.getElementById('tutModified').textContent = manifest.modified ? manifest.modified.substring(0, 19).replace('T', ' ') : 'ACTIVE';
 
-            // Step 2: Grab the true external companion resource instead of relying on duplicate internal strings
-            const companionTarget = '14-tutorial.csv';
-            const assetResponse = await fetch(companionTarget);
-            if (!assetResponse.ok) throw new Error(`Could not locate companion resource file: ${companionTarget}`);
+            // TARGET SPEC: Open the single payload content block cleanly
+            const rawCsvContent = manifest.home?.payload_content || '';
             
-            const rawCsvContent = await assetResponse.text();
+            if (!rawCsvContent) {
+                throw new Error("Target field 'home.payload_content' is empty or unavailable.");
+            }
 
-            // Step 3: Run the grid layout assembler engine
             buildDhtmlGrid(rawCsvContent);
 
             loadingEl.style.display = 'none';
@@ -198,7 +210,7 @@
         } catch (fault) {
             loadingEl.style.display = 'none';
             errorEl.style.display = 'block';
-            errorEl.textContent = `[AVIS DESERIALIZATION FAULT]\n\n${fault.message}`;
+            errorEl.textContent = `[AVIS CONNECTOR REJECTION]\n\n${fault.message}\n\nEnsure '2-tutorial.json' resides in the same root folder destination.`;
         }
     }
 
@@ -206,25 +218,29 @@
         const table = document.getElementById('dataTable');
         table.innerHTML = ''; 
 
+        // Split the plain text rows down cleanly by line breaks
         const lines = csvDataString.split(/\r?\n/).map(row => row.trim()).filter(row => row.length > 0);
         if (lines.length === 0) return;
 
-        // Draw structural table row headers
+        // Construct headers
         const headerTr = document.createElement('tr');
-        lines[0].split(',').forEach(headerText => {
+        const headers = lines[0].split(',');
+        headers.forEach(headerText => {
             const th = document.createElement('th');
             th.textContent = headerText.replace(/_/g, ' ');
             headerTr.appendChild(th);
         });
         table.appendChild(headerTr);
 
-        // Populate cell coordinate data arrays cleanly
+        // Populate table lines row-by-row
         for (let i = 1; i < lines.length; i++) {
+            // Safe parser tracking internal commas inside quotes
             const cells = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || lines[i].split(',');
             const tr = document.createElement('tr');
             
             cells.forEach(cellText => {
                 const td = document.createElement('td');
+                // Clean off wrapping quotes from raw textual columns
                 td.textContent = cellText.replace(/^"|"$/g, '').replace(/\\n/g, '\n');
                 tr.appendChild(td);
             });
