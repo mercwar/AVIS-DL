@@ -56,3 +56,6 @@ A comprehensive, live tutorial breaking down the complete workflow, frontend AJA
 To view the complete step-by-step interactive documentation module, open the repository view tool or go directly to the GitHub Pages link:
 
 👉 **[View Live Publishing Tutorial (1-tutorial.html)](1-tutorial.html)**
+<a href="https://cron.iblogger.org/AVIS-DATALAKE">
+  <img src="avis-dl-2.png" alt="AVIS Banner" style="border: none; max-width: 100%; height: auto;">
+</a>
