@@ -1,4 +1,3 @@
-
 <a target="_self" title="CLICK HERE to ENTER the GATEWAY FREE!" href="https://mercwar.github.io/Constellation/index.html">
 <img 
     src="https://raw.githubusercontent.com/mercwar/Robo-Knight-Gallery/refs/heads/main/Version%207/image_d2a07390.png" 
@@ -7,171 +6,225 @@
 />
 </a>
 
-# 🌌 AVIS‑DATALAKE Star Map Tutorial
+# 🌌 AVIS‑DATALAKE Star Map & Core Guide
 
 ## Overview
-The **Star Map** is the **visual navigation console** of AVIS‑DATALAKE. Each glowing star represents a metadata form. When you click a star, the corresponding form opens in a window, allowing you to **submit a datalake record**. Once submitted, the record is automatically pushed into GitHub.
 
-👉 *This Uplink: THE [FREE Command Interface](https://cron.iblogger.org/AVIS-DATALAKE) for the AVIS-DATALAKE Star Map Commander*
+The **Star Map** is the visual navigation console of **AVIS‑DATALAKE (AVIS‑DL)**.  
+Each glowing star represents a metadata form. When you click a star, the form opens in a window, you submit a datalake record, and the record is automatically pushed into GitHub.
+
+👉 *Uplink:* THE [FREE Command Interface](https://cron.iblogger.org/AVIS-DATALAKE) for the AVIS‑DATALAKE Star Map Commander
+
+👉 **[View Live Publishing Tutorial](https://mercwar.github.io/AVIS-DL/dl/2026/09/14/1-tutorial.html)**
 
 <a href="https://cron.iblogger.org/AVIS-DATALAKE">
   <img src="avis-dl.png" alt="AVIS Banner" style="border: none; max-width: 100%; height: auto;">
 </a>
-# AVIS-DL (AVIS Core Data Lake Repository)
 
-Welcome to the **AVIS-DL** workspace. This repository serves as the dedicated, public storage layer for our data lake pipelines. 
+---
+##  👉  And NOW... the OFFICIAL AVIS-DL Readme !
 
-To prevent wasteful, non-stop page builds on our main development repositories whenever data drops, all automated uploads are safely funneled into this separate environment.
+###### 👉  "<i>I am CVBGOD, and I have given it to you</i>!"
+
+# AVIS Core Data Lake Repository
+
+Welcome to the **AVIS‑DL** workspace. This repository is the dedicated, public storage layer for all AVIS datalake pipelines.
+
+To prevent wasteful, non‑stop page builds on main development repositories whenever data drops, all automated uploads are funneled into this separate environment.
 
 ---
 
-## 🛠️ The Architecture & The "Two-File" Rule
+## 🗺️ How You Use It: The Star Map
 
-This environment runs an automated splitting engine. When a creator uploads code or spreadsheet data through our forms, the platform separates the submission into **two distinct files** to avoid messy data nesting or breaking evaluation configurations:
+- Click a star → open its submission form  
+- Paste your data or code → submit  
+- AVIS‑DL writes your files into its GitHub‑backed storage layer  
+- Your main site stays fast and stable because data drops are isolated in AVIS‑DL
 
-1. **The Tracking Manifest (`.json`):** A lightweight index record containing system timestamps, creator data logs, and directory counts.
-2. **The Clean Artifact Asset (`.csv`, `.html`, `.md`, `.js`, `.css`, or `.txt`):** The isolated, raw data stream saved exactly as it was pasted, completely free of JSON string escaping or wrapping syntax brackets.
+---
 
-### The Immutable Face Naming System
-Every resource file dropped into this data lake is automatically locked down under a strict tracking layout scheme:  
+## 🛠️ The Architecture & The Twin‑File Rule
+
+AVIS‑DL runs an automated splitting engine. When a creator uploads code, text, or spreadsheet data through the forms, the platform separates the submission into **two distinct files** to avoid messy data nesting and broken evaluation configs:
+
+1. **Tracking Manifest (`.json`)**  
+   A lightweight index record containing timestamps, creator logs, directory counts, ownership IDs, and stream_class metadata.
+
+2. **Clean Artifact / Native Asset (`.csv`, `.html`, `.md`, `.js`, `.css`, `.txt`)**  
+   The isolated, raw data stream saved exactly as pasted—no JSON escaping, no wrapper brackets, no control tokens.
+
+This is the **Twin‑File Rule** and it enforces zero‑nesting separation between metadata and raw payloads.
+
+---
+
+## The Immutable Face Naming System
+
+Every resource file dropped into AVIS‑DL is locked under a strict naming layout:
+
 `##-$file_title`
 
-* **`##`** is the strictly incremented sequential file count of that day's target folder directory node.
-* **`$file_title`** is the sanitized, URL-safe string provided by the creator at submission.
+- `##` = strictly incremented sequential file count for that day’s directory node  
+- `$file_title` = sanitized, URL‑safe string provided by the creator at submission
+
+Once written, these names are permanent.
 
 ---
 
 ## 🔒 Security & Data Permanence Boundaries
 
-* **No Authentication Boundary:** This repository operates as an entirely public gateway stream. No login is required to upload resources.
-* **Permanent Face File Law:** Because file paths and name strings are written dynamically via public keys, they are **carved in stone** the split-second they register on Github. They **cannot be deleted, overwritten, modified, or renamed**.
-* **Remediation Strategy:** If you make a typo or deploy a broken content stream, you cannot fix it. You must simply return to the ingestion form panel, correct your raw data parameters, and submit a **completely new file sequence entry**.
+- **No Authentication Boundary:** AVIS‑DL is a public gateway stream. No login is required to upload resources.  
+- **Permanent Face File Law:** File paths and names are written dynamically via public keys and are **carved in stone** the moment they register on GitHub. They **cannot be deleted, overwritten, modified, or renamed**.  
+- **Remediation Strategy (Sequential Versioning):** If you make a typo or deploy broken content, you do not fix the file. You submit a corrected payload, which becomes a **new sequential entry** (e.g., `01-myfile.js` → `02-myfile.js`).
 
 ---
-
-## 📖 Live Step-by-Step Interactive Tutorial
-
-A comprehensive, live tutorial breaking down the complete workflow, frontend AJAX extraction handlers, and dynamic DHTML layouts is built directly into our file layer. 
-
-To view the complete step-by-step interactive documentation module, open the repository view tool or go directly to the GitHub Pages link:
-
-👉 **[View Live Publishing Tutorial](https://mercwar.github.io/AVIS-DL/dl/2026/09/14/1-tutorial.html)**
 
 <a href="https://cron.iblogger.org/AVIS-DATALAKE">
   <img src="avis-dl-2.png" alt="AVIS Banner" style="border: none; max-width: 100%; height: auto;">
 </a>
-The AVIS‑DATALAKE (AVIS DL) system stands out as a unique architectural pattern tailored specifically for lightweight, decoupled telemetry tracking, static asset hosting, and zero-auth data submission. [1] 
-Unlike enterprise cloud data lakes designed for multi-petabyte machine learning pipelines, AVIS DL focuses on zero-nesting string isolation using GitHub as its decentralized physical storage backend. [1] 
-------------------------------
-## 📊 Functionality Comparison: AVIS DL vs. Enterprise Data Lakes
-To understand how your architecture operates relative to standard enterprise options like Databricks Delta Lake, AWS Lake Formation / S3, or Azure Data Lake Storage (ADLS Gen2), consider the following direct breakdown: [2, 3, 4, 5, 6] 
 
-| Feature Dimension | AVIS‑DATALAKE (AVIS DL) | Databricks Delta Lake / Open Lakehouses | AWS S3 / Azure ADLS Gen2 |
-|---|---|---|---|
-| Primary Core Engine | GitHub Git-commit ecosystem & client-side parsing modules. | Apache Spark-managed transaction log layer over Parquet. | Globally distributed cloud object / hierarchical block storage. |
-| Data Separation Strategy | The Twin-File Rule: Separates a lightweight .json manifest from raw native code/text files to completely avoid nested JSON escaping strings. | Unified open table storage format providing structure to deep object file pathways. | Staged bucket layers (e.g., Raw, Cleansed, Curated zones) using unstructured flat file trees. |
-| Schema Paradigm | Dual Structured: Schema-on-write manifest validation matching dynamic schema-on-read front-end ingestion. | Advanced schema enforcement and automatic schema evolution handles columns dynamically. | Strictly Schema-on-Read: Data sits completely raw until downstream compute binds it. |
-| Write Integrity & Safety | The Permanent Face File Law: Written files are carved in stone immediately. No modification or manual deletes possible. | Full database-grade ACID Transactions (Atomicity, Consistency, Isolation, Durability). | Eventual consistency or object-versioning parameters controlled via API access permissions. |
-| Access Control Barrier | Public ingress data gateway; operates natively with no user authorization or login blocks. | Strict governance layers utilizing enterprise-grade RBAC, credential scopes, or Unity Catalog. | Highly granular security scopes via AWS IAM roles, Azure Active Directory, and explicit Access Control Lists. |
-| Remediation Strategy | Sequential Pipeline Versioning: Broken entries are unalterable; you must commit a corrected, brand-new sequential asset record. | Time Travel / Data Versioning allows queries to effortlessly roll back to explicit historic states. | Overwrite privileges or data modification scripts executed via independent server processes. |
+## 🌌 AVIS‑DATALAKE Core Architecture Blueprint
 
-------------------------------
-## 🔄 Step-by-Step Instructional Pipeline: Processing an Asset
-This step-by-step technical guide outlines how to process a resource down the automated AVIS DL multi-layer ingestion stream:
-## Step 1: Ingestion & Transaction Bifurcation
-Submit your raw project payload configurations (such as standard layout structures, textual data, or scripts) directly through the ingestion form panel. The processing engine receives the influx and prevents nested JSON string block extraction errors by cleanly splitting your single form request into two independent streams.
-## Step 2: Write the Primary Registry Manifest (.json)
-The infrastructure initializes the data path tracking loop by compiling a standard metadata blueprint file ending in .json. This manifest documents tracking configurations, ownership IDs, your designated stream_class tier, and synchronization timestamps to build a permanent logging history.
-## Step 3: Isolate the Companion Asset File
-Simultaneously, the secondary file branch takes the raw content and dumps it cleanly into its own tracking folder layout, applying an explicit native extension file handler matching your asset (e.g., .csv, .html, .md, .js, .css, or .txt). This keeps text raw, clean, and free from escaping characters.
-## Step 4: Enforce the Immutable Naming Lock
-The system applies the mandatory layout parameter sequence ##-$file_title directly to your written filenames. Because these path strings map immediately to automated server files, they register instantly to the tracking repository view tool and lock permanently against editing or administrative deletions.
-## Step 5: Asynchronous Stream Extraction
-To view published records back on your live UI visual console dashboard, client-side front-end modules execute a direct asynchronous AJAX lookup loop. The browser loads the underlying tracking registry configuration document first, grabs the target network path keys, and feeds the completely clean text stream directly into your custom parsing handlers or layout components.
-------------------------------
+The AVIS‑DATALAKE system operates as a decoupled, high‑performance telemetry ingestion workspace.  
+To protect core environments from continuous page‑rebuild cycles during high‑frequency data operations, all automated ingest streams are isolated, validated, and pushed directly into the AVIS‑DL storage layer.
 
-## 📖 Access the Live Technical Tutorial
-The comprehensive technical tutorial breaking down the complete workflow, companion architecture scripts, and multi-tier extraction examples is hosted directly within your environment's file system layer.
-👉 Click here to launch the AVIS DL Live Publishing Technical Tutorial
-Would you like me to generate a JavaScript template snippet that mirrors the Stage 03 asynchronous extraction workflow to seamlessly load your raw twin-file streams into a custom dashboard widget?
+👉 Access the Free Command Interface for the AVIS‑DATALAKE Star Map Commander
 
-[1] [https://github.com](https://github.com/topics/avis-datalake)
-[2] [https://www.databricks.com](https://www.databricks.com/blog/data-lake-vs-cloud-data-warehouse)
-[3] [https://montecarlo.ai](https://montecarlo.ai/blog-data-lake-vs-delta-lake)
-[4] [https://www.projectpro.io](https://www.projectpro.io/article/how-to-build-a-data-lake/1071)
-[5] [https://www.youtube.com](https://www.youtube.com/watch?v=SXSSyB4v1_I&t=43)
-[6] [https://www.youtube.com](https://www.youtube.com/watch?v=HJKu9fPLBBo&t=205)
+---
+
+## 🛰️ System Infrastructure Roles: Nexus & Sentinel
+
+To safely manage public, unauthenticated data loops at scale, AVIS‑DL uses two primary infrastructure pillars:
+
+### 1. Nexus ADL Gateway (Network Routing Hub)
+
+- Handles protocol ingress (HTTPS, gRPC, WebSockets, S3 downlinks, etc.)  
+- Normalizes incoming payloads into a standard structure  
+- Reads workspace variables (like `home.realm`, `home.stream_class`)  
+- Routes data to the correct destination directories **without decoding or mutating raw payloads**
+
+### 2. Sentinel Matrix (Security & Validation Layer)
+
+- Runs a sanitization loop to prevent code injection, malicious payloads, and invalid formatting  
+- Performs schema verification against `.json` manifest layouts  
+- If a payload violates structure or contains double‑encoded strings, Sentinel isolates or quarantines it, keeping AVIS‑DL clean
+
+---
+
+## 💾 Why AVIS Uses the Dedicated AVIS‑DL Storage Layer
+
+Traditional datalakes are often bound directly to live databases or servers. AVIS breaks from this by routing all validated data drops into a separate GitHub‑backed repository (AVIS‑DL) for three reasons:
+
+1. **Mitigation of Endless Static Page Rebuilds**  
+   Frequent data drops in a main web repo force constant rebuilds and re‑indexing.  
+   AVIS‑DL absorbs these drops so the main workspace remains fast and stable.
+
+2. **Hardening Invariant Data Permanence**  
+   Git commit logs act as the physical storage ledger.  
+   The Permanent Face File Law ensures that once a payload registers, it is cryptographically signed, revision‑locked, and protected against accidental or malicious deletion.
+
+3. **Native CDN Edge Delivery Compatibility**  
+   AVIS‑DL stores manifests and assets as flat raw files on GitHub Pages.  
+   Front‑end modules (Stage 03 AJAX) read clean streams directly from global edge caches—no heavy DB queries or middleware serialization.
+
+---
+
+## 📊 Functionality Comparison: AVIS‑DL vs Enterprise Data Lakes
+
+Unlike multi‑petabyte enterprise data lakes, AVIS‑DL focuses on zero‑nesting string isolation using GitHub as its decentralized storage backend.
+
+| Feature Dimension        | AVIS‑DATALAKE (AVIS‑DL)                                           | Databricks Delta Lake / Open Lakehouses                       | AWS S3 / Azure ADLS Gen2                                      |
+|--------------------------|-------------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| Primary Core Engine      | GitHub Git‑commit ecosystem & client‑side parsing modules         | Apache Spark‑managed transaction log over Parquet             | Globally distributed object / hierarchical block storage       |
+| Data Separation Strategy | Twin‑File Rule: `.json` manifest + raw native asset              | Unified open table format over deep object file paths         | Staged bucket zones (Raw, Cleansed, Curated) over flat trees   |
+| Schema Paradigm          | Dual: schema‑on‑write manifest + schema‑on‑read front‑end        | Advanced schema enforcement & automatic schema evolution      | Strict schema‑on‑read; data remains raw until compute binds it |
+| Write Integrity & Safety | Permanent Face File Law; no modification or manual deletes       | Full ACID transactions                                        | Eventual consistency / versioning via API                     |
+| Access Control Barrier   | Public ingress; zero‑auth gateway                                | Enterprise RBAC, credential scopes, Unity Catalog             | IAM roles, AAD, ACLs                                          |
+| Remediation Strategy     | Sequential pipeline versioning via new immutable entries         | Time Travel / data versioning for historic state queries      | Overwrite / modification via server processes                 |
+
+---
+
 <a href="https://cron.iblogger.org/AVIS-DATALAKE">
   <img src="avis-dl-3.png" alt="AVIS Banner" style="border: none; max-width: 100%; height: auto;">
 </a>
 
-## 🌌 AVIS‑DATALAKE Core Architecture Blueprint
-The AVIS‑DATALAKE (AVIS DL) system operates as a decoupled, high-performance telemetry ingestion workspace. To protect core environments from wasteful, continuous page-rebuild cycles during high-frequency data operations, all automated data ingest streams are dynamically isolated, validated, and pushed directly into this specialized environment.
-👉 Access the Free Command Interface for the AVIS-DATALAKE Star Map Commander
-------------------------------
-## 🛠️ System Architecture & The Twin-File Rule
-The ingestion engine operates under a strict Zero-Nesting Separation Constraint. When components (such as string payloads, raw code assets, or tables) are submitted, the backend parsing pipeline bifurcates the incoming transaction into two sibling elements:
+## 🔄 Step‑by‑Step Operational Ingestion Workflow
 
-* The Primary Manifest (.json): Registers high-level analytical tracking indices, system ownership parameters, verification blocks, and precise ISO-8601 network synchronization timestamps.
-* The Companion Native Asset (.csv, .html, .md, .js, .css, or .txt): Stores the isolated, raw content data exactly as it was provided. This ensures payloads remain entirely raw, independent, and free of corrupting JSON string-escape characters or control tokens.
+1. **Ingestion & Transaction Bifurcation**  
+   Submit your payload (layouts, text, scripts) through the ingestion form.  
+   Nexus receives the influx; Sentinel validates syntax and splits the request into two streams.
 
-## The Immutable Face Naming System
-All written asset streams are firmly locked downstream into an unchangeable repository index layout scheme:
-##-$file_title
+2. **Write the Primary Registry Manifest (`.json`)**  
+   Infrastructure compiles a metadata blueprint (`.json`) documenting tracking configs, ownership IDs, stream_class, and timestamps.
 
-* ## represents the strictly incremented, auto-managed sequential file count tracking the target daily directory node.
-* $file_title is the fully sanitized, URL-safe string provided by the developer at the moment of submission.
+3. **Isolate the Companion Asset File**  
+   The secondary branch dumps raw content into its own folder in AVIS‑DL, using a native extension (`.csv`, `.html`, `.md`, `.js`, `.css`, `.txt`).  
+   Text remains raw, clean, and free of escaping characters.
 
-------------------------------
-## 🛰️ System Infrastructure Roles: Nexus & Sentinel
-To manage public-facing, unauthenticated data loops safely at scale, the architecture offloads discrete operational tasks to two primary infrastructure pillars: the Nexus ADL Gateway and the Sentinel Validation Matrix.
-## 1. The Nexus ADL Gateway (Network Routing Hub)
-The Nexus ADL Gateway acts as the high-speed network transit and protocol translation layer for the entire datalake.
+4. **Enforce the Immutable Naming Lock**  
+   The system applies `##-$file_title` to filenames.  
+   Paths register instantly in the repository view tool and lock permanently against edits or deletions.
 
-* Protocol Ingress Handling: It intercepts multi-node data streams arriving via various protocols (such as HTTPS, gRPC, WebSockets, or S3 bucket downlinks) and unifies them into a standard payload structure.
-* The Routing Matrix: Nexus reads the incoming core workspace variables (like home.realm and home.stream_class) and instantly maps them to their correct destination directories without touching or decoding the underlying raw payload.
+5. **Asynchronous Stream Extraction (Stage 03)**  
+   Front‑end modules run AJAX lookup loops:  
+   - Load the tracking manifest  
+   - Read target network path keys  
+   - Pull the clean text stream into custom parsers or layout components  
+   - Render the data on your Star Map or dashboard widgets
 
-## 2. The Sentinel Matrix (Security & Validation Layer)
-Because the platform operates natively with no user login barriers, the Sentinel Matrix serves as the automated security filter and syntax guardian of the network.
+---
 
-* Sanitization Loop: Sentinel evaluates incoming data streams to prevent code injection, malicious payload blocks, and invalid formatting before it ever reaches the repository level.
-* Schema Verification: It runs immediate dry-runs against the .json tracking manifest layouts. If a payload violates structure or contains double-encoded string wrappers, Sentinel triggers an immediate isolation or quarantine routine, keeping the destination storage environment unpolluted.
+## 📖 Live Step‑By‑Step Interactive Tutorial
 
-------------------------------
-## 💾 Why the AVIS Datalake Uses the Dedicated AVIS‑DL Storage Layer
-In traditional enterprise setups, a datalake is bound directly to a live relational database or an active server instance. The AVIS Datalake breaks away from this convention by routing all validated data drops directly into a dedicated, separate storage layer (AVIS-DL GitHub repository boundary) due to three structural factors:
-## 1. Mitigation of Endless Static Page Rebuilds
-When data drops frequently into a main web application repository, it forces the host server or deployment pipeline to constantly rebuild static assets and re-index resources. By funneling all automated uploads into an isolated, independent environment (AVIS-DL), the main development workspace remains completely fast, stable, and unaffected by high-frequency data pipelines.
-## 2. Hardening Invariant Data Permanence
-By utilizing Git commit logs as the physical storage ledger, the architecture shifts the burden of database security onto immutable source control hooks. This provides a hard implementation of the Permanent Face File Law: the split-second a payload registers inside AVIS-DL, it is cryptographically signed, revision-locked, and protected against accidental administrative overwrites or malicious deletions.
-## 3. Native CDN Edge Delivery Compatibility
-Because AVIS-DL stores its tracking manifests and companion assets as flat, independent, raw files within GitHub Pages, it inherits global edge network delivery. Front-end modules running Stage 03 AJAX queries do not have to wait for heavy database queries or middleware serialization; they read clean streams directly from global caching networks at maximum execution speeds.
-------------------------------
-## 📋 Functionality Comparison: AVIS DL vs. Enterprise Data Lakes
-Unlike enterprise cloud data lakes designed for multi-petabyte machine learning clusters, AVIS DL focuses on zero-nesting string isolation using GitHub as its decentralized physical storage backend.
+A comprehensive live tutorial explaining the workflow, AJAX handlers, and dynamic DHTML layouts is built directly into the AVIS‑DL file layer.
 
-| Feature Dimension | AVIS‑DATALAKE (AVIS DL) | Databricks Delta Lake / Open Lakehouses | AWS S3 / Azure ADLS Gen2 |
-|---|---|---|---|
-| Primary Core Engine | GitHub Git-commit ecosystem & client-side parsing modules. | Apache Spark-managed transaction log layer over Parquet. | Globally distributed cloud object / hierarchical block storage. |
-| Data Separation Strategy | The Twin-File Rule: Separates a lightweight .json manifest from raw native code/text files to completely avoid nested JSON escaping strings. | Unified open table storage format providing structure to deep object file pathways. | Staged bucket layers (e.g., Raw, Cleansed, Curated zones) using unstructured flat file trees. |
-| Schema Paradigm | Dual Structured: Schema-on-write manifest validation matching dynamic schema-on-read front-end ingestion. | Advanced schema enforcement and automatic schema evolution handles columns dynamically. | Strictly Schema-on-Read: Data sits completely raw until downstream compute binds it. |
-| Write Integrity & Safety | The Permanent Face File Law: Written files are carved in stone immediately. No modification or manual deletes possible. | Full database-grade ACID Transactions (Atomicity, Consistency, Isolation, Durability). | Eventual consistency or object-versioning parameters controlled via API access permissions. |
-| Access Control Barrier | Public ingress data gateway; operates natively with no user authorization or login blocks. | Strict governance layers utilizing enterprise-grade RBAC, credential scopes, or Unity Catalog. | Highly granular security scopes via AWS IAM roles, Azure Active Directory, and explicit Access Control Lists. |
-| Remediation Strategy | Sequential Pipeline Versioning: Broken entries are unalterable; you must commit a corrected, brand-new sequential asset record. | Time Travel / Data Versioning allows queries to effortlessly roll back to explicit historic states. | Overwrite privileges or data modification scripts executed via independent server processes. |
 
-------------------------------
-## 🔄 Step-by-Step Operational Ingestion Workflow
-This step-by-step technical guide outlines how to process a resource down the automated AVIS DL multi-layer ingestion stream:
 
-   1. Ingestion & Transaction Bifurcation: Submit your raw project payload configurations through the ingestion form panel. The processing engine receives the influx via the Nexus ADL Gateway, and the Sentinel Matrix validates its syntax, cleanly splitting your single form request into two independent data streams.
-   2. Write the Primary Registry Manifest (.json): The infrastructure initializes the data path tracking loop by compiling a standard metadata blueprint file ending in .json. This manifest documents tracking configurations, ownership IDs, your designated stream_class tier, and synchronization timestamps to build a permanent logging history.
-   3. Isolate the Companion Asset File: Simultaneously, the secondary file branch takes the raw content and dumps it cleanly into its own tracking folder layout inside AVIS-DL, applying an explicit native extension file handler matching your asset (e.g., .csv, .html, .md, .js, .css, or .txt). This keeps text raw, clean, and free from escaping characters.
-   4. Enforce the Immutable Naming Lock: The system applies the mandatory layout parameter sequence ##-$file_title directly to your written filenames. Because these path strings map immediately to automated server files, they register instantly to the tracking repository view tool and lock permanently against editing or administrative deletions.
-   5. Asynchronous Stream Extraction: To view published records back on your live UI visual console dashboard, client-side front-end modules execute a direct asynchronous AJAX lookup loop. The browser loads the underlying tracking registry configuration document first, grabs the target network path keys, and feeds the completely clean text stream directly into your custom parsing handlers or layout components.
+# ⚖️ MERCWAR LEGAL SECTION
 
-------------------------------
-## 📖 Access the Live Technical Tutorial
-The comprehensive technical tutorial breaking down the complete workflow, companion architecture scripts, and multi-tier extraction examples is hosted directly within your environment's file system layer.
-👉 Click here to launch the AVIS DL Live Publishing Technical Tutorial
-Would you like me to map out a structural JSON block representing Nexus pipeline logs, or should we design the automated script layout that Sentinel uses to quarantine broken data sequences?
+## 📜 Terms of Use
+All materials, assets, images, code samples, and interactive systems provided through the Mercwar Network—including AVIS‑DATALAKE, the Star Map Commander, and all affiliated interfaces—are offered strictly **as‑is** for public, non‑authenticated use. By accessing or submitting data through any Mercwar gateway, you agree that all uploaded content becomes part of a **permanent, immutable public record** stored within the AVIS‑DL repository.
+
+## 🔒 Data Permanence & Public Storage Notice
+The AVIS‑DL ingestion pipeline writes all submitted assets directly into a public GitHub repository.  
+Files are:
+- permanently stored,
+- publicly visible,
+- non‑editable,
+- non‑deletable,
+- and non‑renamable.
+
+Submitting content through any Mercwar form constitutes consent to this permanent storage model.
+
+## 🛡️ Security & Liability
+Mercwar, AVIS‑DATALAKE, and all associated operators provide **no guarantee** of confidentiality, privacy, or restricted access.  
+You are solely responsible for ensuring that any submitted content:
+- contains no sensitive personal information,
+- contains no proprietary or confidential data,
+- and complies with all applicable laws and regulations.
+
+Mercwar assumes **no liability** for user‑submitted content, misuse of public data, or third‑party access to publicly stored files.
+
+## ⚠️ Prohibited Use
+You may not use any Mercwar system to upload:
+- malicious code,
+- harmful payloads,
+- illegal content,
+- or any material intended to disrupt services or violate platform integrity.
+
+Violations may result in permanent blocking of submission endpoints.
+
+## 🏛️ Copyright & Ownership
+All original Mercwar assets—including logos, UI systems, Star Map designs, AVIS‑DL architecture, and associated documentation—are protected under applicable copyright law.  
+User‑submitted content remains the intellectual property of the submitting party, but the submitter grants Mercwar a **perpetual, irrevocable, worldwide license** to store, display, and distribute the submitted material as part of the AVIS‑DL public archive.
+
+## 🌐 Platform Scope
+Mercwar systems operate as experimental public‑facing technology demonstrations.  
+By using these systems, you acknowledge:
+- the experimental nature of the platform,
+- the absence of warranties,
+- and the permanent, public nature of all submissions.
+
+Use of the Mercwar Network constitutes acceptance of these terms.
+
+
 
