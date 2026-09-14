@@ -178,53 +178,55 @@ Unlike multi‑petabyte enterprise data lakes, AVIS‑DL focuses on zero‑nesti
 A comprehensive live tutorial explaining the workflow, AJAX handlers, and dynamic DHTML layouts is built directly into the AVIS‑DL file layer.
 
 
-
 # ⚖️ MERCWAR LEGAL SECTION
 
-## 📜 Terms of Use
-All materials, assets, images, code samples, and interactive systems provided through the Mercwar Network—including AVIS‑DATALAKE, the Star Map Commander, and all affiliated interfaces—are offered strictly **as‑is** for public, non‑authenticated use. By accessing or submitting data through any Mercwar gateway, you agree that all uploaded content becomes part of a **permanent, immutable public record** stored within the AVIS‑DL repository.
+All systems, interfaces, assets, and data‑handling mechanisms within the Mercwar Network—including AVIS‑DATALAKE, the Star Map Commander, and all affiliated gateways—operate under a permanent‑record public storage model. By using any Mercwar submission interface, you agree to the following binding conditions.
 
-## 🔒 Data Permanence & Public Storage Notice
-The AVIS‑DL ingestion pipeline writes all submitted assets directly into a public GitHub repository.  
-Files are:
-- permanently stored,
-- publicly visible,
-- non‑editable,
-- non‑deletable,
-- and non‑renamable.
+### DATA SUBMISSION & STORAGE
+All submitted content is written directly into the AVIS‑DL public repository.  
+Every file becomes a permanent, immutable entry in the public ledger.  
+Files cannot be edited, renamed, removed, or obscured once written.
 
-Submitting content through any Mercwar form constitutes consent to this permanent storage model.
+Submitting content through any Mercwar gateway constitutes full consent to:
+- permanent public storage,
+- unrestricted public visibility,
+- and irreversible archival under the AVIS‑DL system.
 
-## 🛡️ Security & Liability
-Mercwar, AVIS‑DATALAKE, and all associated operators provide **no guarantee** of confidentiality, privacy, or restricted access.  
-You are solely responsible for ensuring that any submitted content:
+### USER RESPONSIBILITY
+You are solely responsible for the material you submit.  
+You must ensure that your content:
 - contains no sensitive personal information,
-- contains no proprietary or confidential data,
+- contains no confidential or proprietary data,
 - and complies with all applicable laws and regulations.
 
-Mercwar assumes **no liability** for user‑submitted content, misuse of public data, or third‑party access to publicly stored files.
+Mercwar assumes no liability for user‑submitted content or any consequences arising from its public availability.
 
-## ⚠️ Prohibited Use
-You may not use any Mercwar system to upload:
+### SECURITY & PROHIBITED USE
+Mercwar systems automatically sanitize and validate incoming payloads.  
+You may not upload:
 - malicious code,
 - harmful payloads,
 - illegal content,
-- or any material intended to disrupt services or violate platform integrity.
+- or any material intended to disrupt or compromise system integrity.
 
-Violations may result in permanent blocking of submission endpoints.
+Violations may result in permanent termination of submission access.
 
-## 🏛️ Copyright & Ownership
-All original Mercwar assets—including logos, UI systems, Star Map designs, AVIS‑DL architecture, and associated documentation—are protected under applicable copyright law.  
-User‑submitted content remains the intellectual property of the submitting party, but the submitter grants Mercwar a **perpetual, irrevocable, worldwide license** to store, display, and distribute the submitted material as part of the AVIS‑DL public archive.
+### COPYRIGHT & OWNERSHIP
+All original Mercwar assets—including logos, UI systems, Star Map designs, AVIS‑DL architecture, and documentation—are protected under applicable copyright law.
 
-## 🌐 Platform Scope
-Mercwar systems operate as experimental public‑facing technology demonstrations.  
+User‑submitted content remains the intellectual property of the submitting party.  
+However, by submitting content, you grant Mercwar a **perpetual, irrevocable, worldwide license** to store, display, and distribute the material as part of the AVIS‑DL public archive.
+
+### PLATFORM SCOPE
+Mercwar systems function as experimental, public‑facing technology demonstrations.  
 By using these systems, you acknowledge:
-- the experimental nature of the platform,
+- their experimental nature,
 - the absence of warranties,
 - and the permanent, public nature of all submissions.
 
-Use of the Mercwar Network constitutes acceptance of these terms.
+Continued use of the Mercwar Network signifies acceptance of all terms in this Legal Section.
+
+Copyright © 2026 MercWar AI — All Rights Reserved.
 
 
 
