@@ -1,26 +1,26 @@
 {
-    "file": {
-        "title": "tutorial"
-    },
-    "owner": {
-        "system_id": "Tutorial",
-        "team": "",
-        "contact_email": ""
-    },
-    "id": "Tutorial",
-    "lifecycle": {
-        "version": "v1.0.0"
-    },
-    "home": {
-        "realm": "AVIS-PRIMARY-CORE",
-        "host_node": "Tutorial",
-        "stream_class": "adl_development_avis",
-        "runtime_ecosystem": "web-personal-profile",
-        "alpha": "json",
-        "payload_content": "Section_Type,Content_Header,Content_Paragraph\r\nConcept,Introduction to Asynchronous Operations,\"Asynchronous JavaScript and XML (AJAX) lets modern web interfaces process data smoothly in the background. By keeping data processing separate from the visual display, web apps can refresh specific areas of a page dynamically without causing glitches or forcing a full reload.\"\r\nConcept,The Core Dual-File Pipeline Strategy,\"The system enforces a clean separation of your files. When you submit custom text, code snippets, or spreadsheets, the backend splits the task: it writes a structured tracking manifest file for system metrics while placing your raw content cleanly into an independent file using its native extension.\"\r\nStep,Stage 01: Core Index Tracking Entry (.json),\"The background system starts every process by generating a main tracking index file ending in .json. This file logs necessary system paths, developer info, security settings, and precise timestamps to build a permanent history of where your asset travels.\"\r\nStep,Stage 02: Companion Artifact Separation,\"If you choose an alternative extension like csv, html, md, js, css, or txt, the system extracts the raw content from the index context. It saves your content perfectly clean as a separate file. This ensures your code or text stays completely unpolluted by JSON formatting characters.\"\r\nStep,Stage 03: Asynchronous Stream Extraction,\"To display data on the dashboard, front-end modules use direct AJAX requests to find these related files. The browser opens the main tracking registry file, identifies the correct path keys, and sends the raw, clean content stream straight into your custom layout or parsing components.\"\r\nRule,Public Server Access & Security Metrics,\"Because this tracking server is fully public and requires no login, all uploaded data is permanent. The environment lacks any login requirements, which means there are absolutely no file editing dashboards, delete options, or override functions available.\"\r\nRule,The Permanent Face File Naming Law,\"Every uploaded file gets a permanent name that cannot be modified. The engine embeds your title directly into the filename structure (##-$file_title). The exact split-second it registers on GitHub, the path is permanent and can never be changed or renamed.\"\r\nRule,Pipeline Mismatch Remediation Strategy,\"If you make a typo, submit an error, or push a broken data stream, you cannot edit or overwrite the existing file. To fix any mistake, simply go back to the submission form, fix your inputs, generate a brand new file entry, and deploy it as a new sequence.\"\r\nRule,Core Separation Structural Constraint,\"Never embed large text blocks, layouts, or spreadsheets into an escaped string field inside a JSON configuration. This creates double-encoded text that fails during parsing. Instead, always keep your main tracking manifest completely separate from your raw companion files.\"\r\nRule,Fallback Formatter Configuration,\"If the home[alpha] input option is missing or sent as an empty field, the engine skips the dual-file splitting process entirely. Instead, it defaults to saving a single master metadata manifest file as a standard .json entry.\"\r\n"
-    },
-    "usage": {
-        "notes": "Tutorial"
-    },
-    "modified": "2026-09-14T12:44:20+00:00"
+  "file": {
+    "title": "tutorial"
+  },
+  "owner": {
+    "system_id": "Tutorial",
+    "team": "",
+    "contact_email": ""
+  },
+  "id": "Tutorial",
+  "lifecycle": {
+    "version": "v1.0.0"
+  },
+  "home": {
+    "realm": "AVIS-PRIMARY-CORE",
+    "host_node": "Tutorial",
+    "stream_class": "adl_development_avis",
+    "runtime_ecosystem": "web-personal-profile",
+    "alpha": "json",
+    "payload_content": "Section_Type,Content_Header,Content_Paragraph\r\nConcept,Introduction to Asynchronous Operations,\"Asynchronous JavaScript and XML (AJAX) lets modern web interfaces process data smoothly in the background. By keeping data processing separate from the visual display, web apps can refresh specific areas of a page dynamically without causing glitches or forcing a full reload.\"\r\nConcept,The Core Dual-File Pipeline Strategy,\"The system enforces a clean separation of your files. When you submit custom text, code snippets, or spreadsheets, the backend splits the task: it writes a structured tracking manifest file for system metrics while placing your raw content cleanly into an independent file using its native extension.\"\r\nStep,Stage 01: Core Index Tracking Entry (.json),\"The background system starts every process by generating a main tracking index file ending in .json. This file logs necessary system paths, developer info, security settings, and precise timestamps to build a permanent history of where your asset travels.\"\r\nStep,Stage 02: Companion Artifact Separation,\"If you choose an alternative extension like csv, html, md, js, css, or txt, the system extracts the raw content from the index context. It saves your content perfectly clean as a separate file. This ensures your code or text stays completely unpolluted by JSON formatting characters.\"\r\nStep,Stage 03: Asynchronous Stream Extraction,\"To display data on the dashboard, front-end modules use direct AJAX requests to find these related files. The browser opens the main tracking registry file, identifies the correct path keys, and sends the raw, clean content stream straight into your custom layout or parsing components.\"\r\nRule,Public Server Access & Security Metrics,\"Because this tracking server is fully public and requires no login, all uploaded data is permanent. The environment lacks any login requirements, which means there are absolutely no file editing dashboards, delete options, or override functions available.\"\r\nRule,The Permanent Face File Naming Law,\"Every uploaded file gets a permanent name that cannot be modified. The engine embeds your title directly into the filename structure (##-$file_title). The exact split-second it registers on GitHub, the path is permanent and can never be changed or renamed.\"\r\nRule,Pipeline Mismatch Remediation Strategy,\"If you make a typo, submit an error, or push a broken data stream, you cannot edit or overwrite the existing file. To fix any mistake, simply go back to the submission form, fix your inputs, generate a brand new file entry, and deploy it as a new sequence.\"\r\nRule,Core Separation Structural Constraint,\"Never embed large text blocks, layouts, or spreadsheets into an escaped string field inside a JSON configuration. This creates double-encoded text that fails during parsing. Instead, always keep your main tracking manifest completely separate from your raw companion files.\"\r\nRule,Fallback Formatter Configuration,\"If the home[alpha] input option is missing or sent as an empty field, the engine skips the dual-file splitting process entirely. Instead, it defaults to saving a single master metadata manifest file as a standard .json entry.\"\r\n"
+  },
+  "usage": {
+    "notes": "Tutorial"
+  },
+  "modified": "2026-09-14T12:44:20+00:00"
 }
