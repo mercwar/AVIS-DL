@@ -1,0 +1,30 @@
+{
+    "method": "add",
+    "file": {
+        "title": "tutorial"
+    },
+    "owner": {
+        "system_id": "tutorial",
+        "team": "",
+        "contact_email": ""
+    },
+    "id": "tutorial",
+    "lifecycle": {
+        "version": "v1.0.0"
+    },
+    "location": {
+        "protocol": "https"
+    },
+    "url": {
+        "full": "https://mercwar.github.io/Quasar/index.html?quasar=AVIS-DL%2Fdl%2F2026%2F09%2F14%2F9-Tutorial.quasar",
+        "description": "Basic Stargate Deployment",
+        "adl": ""
+    },
+    "usage": {
+        "notes": ""
+    },
+    "home": {
+        "payload_content": "[Externalized to companion SOURCE file asset]"
+    },
+    "modified": "2026-09-17T00:31:57+00:00"
+}
