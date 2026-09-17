@@ -1,0 +1,336 @@
+{
+    "title": "Constellation",
+    "key": "KEY-DEFAULT21561561",
+    "timestamp": "2026-09-17T21:29:31.924Z",
+    "archived": false,
+    "orbs": [
+        {
+            "id": 1,
+            "mesh": {
+                "metadata": {
+                    "version": 4.5,
+                    "type": "Object",
+                    "generator": "Object3D.toJSON"
+                },
+                "geometries": [
+                    {
+                        "uuid": "0D08BE15-8842-4CBD-9F8B-249ED12F231C",
+                        "type": "SphereGeometry",
+                        "radius": 0.5,
+                        "widthSegments": 32,
+                        "heightSegments": 32,
+                        "phiStart": 0,
+                        "phiLength": 6.283185307179586,
+                        "thetaStart": 0,
+                        "thetaLength": 3.141592653589793
+                    }
+                ],
+                "materials": [
+                    {
+                        "uuid": "3A47E38D-9846-4B5C-9C81-CA6F203DB2E6",
+                        "type": "MeshStandardMaterial",
+                        "color": 62207,
+                        "roughness": 0.2,
+                        "metalness": 0.8,
+                        "emissive": 62207,
+                        "emissiveIntensity": 0.6,
+                        "envMapIntensity": 1,
+                        "refractionRatio": 0.98,
+                        "depthFunc": 3,
+                        "depthTest": true,
+                        "depthWrite": true,
+                        "colorWrite": true,
+                        "stencilWrite": false,
+                        "stencilWriteMask": 255,
+                        "stencilFunc": 519,
+                        "stencilRef": 0,
+                        "stencilFuncMask": 255,
+                        "stencilFail": 7680,
+                        "stencilZFail": 7680,
+                        "stencilZPass": 7680
+                    }
+                ],
+                "object": {
+                    "uuid": "D2745407-F06C-4692-BA03-4BE627097ECB",
+                    "type": "Mesh",
+                    "layers": 1,
+                    "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -6,
+                        0,
+                        -1.5,
+                        1
+                    ],
+                    "geometry": "0D08BE15-8842-4CBD-9F8B-249ED12F231C",
+                    "material": "3A47E38D-9846-4B5C-9C81-CA6F203DB2E6"
+                }
+            },
+            "x": -6,
+            "y": 0,
+            "z": -1.5,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Stellar Node",
+            "name": "Node-1",
+            "timestamp": "2026-09-17T21:29:17.190Z",
+            "keycode": "KEY-DEFAULT"
+        },
+        {
+            "id": 2,
+            "mesh": {
+                "metadata": {
+                    "version": 4.5,
+                    "type": "Object",
+                    "generator": "Object3D.toJSON"
+                },
+                "geometries": [
+                    {
+                        "uuid": "E14B8E9C-EAF1-4A26-850D-AB98BD331971",
+                        "type": "SphereGeometry",
+                        "radius": 0.5,
+                        "widthSegments": 32,
+                        "heightSegments": 32,
+                        "phiStart": 0,
+                        "phiLength": 6.283185307179586,
+                        "thetaStart": 0,
+                        "thetaLength": 3.141592653589793
+                    }
+                ],
+                "materials": [
+                    {
+                        "uuid": "EB7B11D3-87E3-4480-A8ED-75B55EE75800",
+                        "type": "MeshStandardMaterial",
+                        "color": 62207,
+                        "roughness": 0.2,
+                        "metalness": 0.8,
+                        "emissive": 62207,
+                        "emissiveIntensity": 0.6,
+                        "envMapIntensity": 1,
+                        "refractionRatio": 0.98,
+                        "depthFunc": 3,
+                        "depthTest": true,
+                        "depthWrite": true,
+                        "colorWrite": true,
+                        "stencilWrite": false,
+                        "stencilWriteMask": 255,
+                        "stencilFunc": 519,
+                        "stencilRef": 0,
+                        "stencilFuncMask": 255,
+                        "stencilFail": 7680,
+                        "stencilZFail": 7680,
+                        "stencilZPass": 7680
+                    }
+                ],
+                "object": {
+                    "uuid": "338859B7-A477-4A26-BE65-EF98AB59C484",
+                    "type": "Mesh",
+                    "layers": 1,
+                    "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -3,
+                        0,
+                        4.5,
+                        1
+                    ],
+                    "geometry": "E14B8E9C-EAF1-4A26-850D-AB98BD331971",
+                    "material": "EB7B11D3-87E3-4480-A8ED-75B55EE75800"
+                }
+            },
+            "x": -3,
+            "y": 0,
+            "z": 4.5,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Stellar Node",
+            "name": "Node-2",
+            "timestamp": "2026-09-17T21:29:19.741Z",
+            "keycode": "KEY-DEFAULT"
+        },
+        {
+            "id": 3,
+            "mesh": {
+                "metadata": {
+                    "version": 4.5,
+                    "type": "Object",
+                    "generator": "Object3D.toJSON"
+                },
+                "geometries": [
+                    {
+                        "uuid": "D355B64E-0A80-402D-AA4C-3AC9D44BE7A9",
+                        "type": "SphereGeometry",
+                        "radius": 0.5,
+                        "widthSegments": 32,
+                        "heightSegments": 32,
+                        "phiStart": 0,
+                        "phiLength": 6.283185307179586,
+                        "thetaStart": 0,
+                        "thetaLength": 3.141592653589793
+                    }
+                ],
+                "materials": [
+                    {
+                        "uuid": "A60BCD7E-E254-4300-87AF-84AD1966FA1E",
+                        "type": "MeshStandardMaterial",
+                        "color": 62207,
+                        "roughness": 0.2,
+                        "metalness": 0.8,
+                        "emissive": 62207,
+                        "emissiveIntensity": 0.6,
+                        "envMapIntensity": 1,
+                        "refractionRatio": 0.98,
+                        "depthFunc": 3,
+                        "depthTest": true,
+                        "depthWrite": true,
+                        "colorWrite": true,
+                        "stencilWrite": false,
+                        "stencilWriteMask": 255,
+                        "stencilFunc": 519,
+                        "stencilRef": 0,
+                        "stencilFuncMask": 255,
+                        "stencilFail": 7680,
+                        "stencilZFail": 7680,
+                        "stencilZPass": 7680
+                    }
+                ],
+                "object": {
+                    "uuid": "90A13DEB-A05A-4BE5-9360-E9216EBE526D",
+                    "type": "Mesh",
+                    "layers": 1,
+                    "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -4.5,
+                        0,
+                        4.5,
+                        1
+                    ],
+                    "geometry": "D355B64E-0A80-402D-AA4C-3AC9D44BE7A9",
+                    "material": "A60BCD7E-E254-4300-87AF-84AD1966FA1E"
+                }
+            },
+            "x": -4.5,
+            "y": 0,
+            "z": 4.5,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Stellar Node",
+            "name": "Node-3",
+            "timestamp": "2026-09-17T21:29:20.181Z",
+            "keycode": "KEY-DEFAULT"
+        },
+        {
+            "id": 4,
+            "mesh": {
+                "metadata": {
+                    "version": 4.5,
+                    "type": "Object",
+                    "generator": "Object3D.toJSON"
+                },
+                "geometries": [
+                    {
+                        "uuid": "E16CE479-9F87-431C-8B73-82F13D415025",
+                        "type": "SphereGeometry",
+                        "radius": 0.5,
+                        "widthSegments": 32,
+                        "heightSegments": 32,
+                        "phiStart": 0,
+                        "phiLength": 6.283185307179586,
+                        "thetaStart": 0,
+                        "thetaLength": 3.141592653589793
+                    }
+                ],
+                "materials": [
+                    {
+                        "uuid": "B03E3C3A-8F68-47F1-A3E2-276FCD31DAB6",
+                        "type": "MeshStandardMaterial",
+                        "color": 62207,
+                        "roughness": 0.2,
+                        "metalness": 0.8,
+                        "emissive": 62207,
+                        "emissiveIntensity": 0.6,
+                        "envMapIntensity": 1,
+                        "refractionRatio": 0.98,
+                        "depthFunc": 3,
+                        "depthTest": true,
+                        "depthWrite": true,
+                        "colorWrite": true,
+                        "stencilWrite": false,
+                        "stencilWriteMask": 255,
+                        "stencilFunc": 519,
+                        "stencilRef": 0,
+                        "stencilFuncMask": 255,
+                        "stencilFail": 7680,
+                        "stencilZFail": 7680,
+                        "stencilZPass": 7680
+                    }
+                ],
+                "object": {
+                    "uuid": "AFF27449-7138-46B9-A973-181A266B4F1B",
+                    "type": "Mesh",
+                    "layers": 1,
+                    "matrix": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        -4.5,
+                        0,
+                        6,
+                        1
+                    ],
+                    "geometry": "E16CE479-9F87-431C-8B73-82F13D415025",
+                    "material": "B03E3C3A-8F68-47F1-A3E2-276FCD31DAB6"
+                }
+            },
+            "x": -4.5,
+            "y": 0,
+            "z": 6,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Stellar Node",
+            "name": "Node-4",
+            "timestamp": "2026-09-17T21:29:24.421Z",
+            "keycode": "KEY-DEFAULT"
+        }
+    ]
+}
