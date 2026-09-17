@@ -1,0 +1,51 @@
+{
+    "title": "Constellation_Alpha",
+    "timestamp": "2026-09-17T18:38:35.456Z",
+    "archived": false,
+    "keycodes": [
+        "KEY-J33ANJ",
+        "KEY-T0DDZX",
+        "KEY-U7JSP2"
+    ],
+    "orbs": [
+        {
+            "id": 1789670113018,
+            "x": -300,
+            "y": -100,
+            "z": -200,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "data": "Telemetry Nominal",
+            "timestamp": "2026-09-17T18:35:13.019Z",
+            "name": "Star_1",
+            "keycode": "KEY-J33ANJ"
+        },
+        {
+            "id": 1789670113315,
+            "x": 100,
+            "y": -200,
+            "z": -200,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "data": "Telemetry Nominal",
+            "timestamp": "2026-09-17T18:35:13.315Z",
+            "name": "Star_2",
+            "keycode": "KEY-T0DDZX"
+        },
+        {
+            "id": 1789670113835,
+            "x": 200,
+            "y": 0,
+            "z": -100,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "data": "Telemetry Nominal",
+            "timestamp": "2026-09-17T18:35:13.835Z",
+            "name": "Star_3",
+            "keycode": "KEY-U7JSP2"
+        }
+    ]
+}
