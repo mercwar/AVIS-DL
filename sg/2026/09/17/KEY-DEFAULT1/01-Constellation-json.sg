@@ -1,7 +1,7 @@
 {
     "title": "Constellation",
     "key": "KEY-DEFAULT1",
-    "timestamp": "2026-09-17T20:35:51.314Z",
+    "timestamp": "2026-09-17T20:36:00.642Z",
     "archived": true,
     "orbs": [
         {
@@ -63,6 +63,18 @@
             "name": "Orb_5",
             "keycode": "KEY-DEFAULT",
             "timestamp": "2026-09-17T20:35:02.946Z"
+        },
+        {
+            "id": 1789677352954,
+            "x": 10,
+            "y": 0,
+            "z": -10,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "name": "Orb_6",
+            "keycode": "KEY-DEFAULT1",
+            "timestamp": "2026-09-17T20:35:52.954Z"
         }
     ]
 }
