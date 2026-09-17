@@ -1,0 +1,44 @@
+{
+    "title": "Constellation",
+    "key": "KEY-DEFAULT6",
+    "timestamp": "2026-09-17T20:39:25.243Z",
+    "archived": false,
+    "orbs": [
+        {
+            "id": 1789677556755,
+            "x": -20,
+            "y": 0,
+            "z": -40,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "name": "Orb_1",
+            "keycode": "KEY-DEFAULT",
+            "timestamp": "2026-09-17T20:39:16.755Z"
+        },
+        {
+            "id": 1789677557179,
+            "x": -50,
+            "y": 0,
+            "z": -40,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "name": "Orb_2",
+            "keycode": "KEY-DEFAULT",
+            "timestamp": "2026-09-17T20:39:17.179Z"
+        },
+        {
+            "id": 1789677557666,
+            "x": -70,
+            "y": 0,
+            "z": -30,
+            "color": "#00f2ff",
+            "size": 25,
+            "starType": "Standard",
+            "name": "Orb_3",
+            "keycode": "KEY-DEFAULT",
+            "timestamp": "2026-09-17T20:39:17.666Z"
+        }
+    ]
+}
