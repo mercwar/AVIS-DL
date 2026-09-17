@@ -1,8 +1,8 @@
 {
     "title": "Constellation",
     "key": "KEY-DEFAULT3",
-    "timestamp": "2026-09-17T20:37:51.579Z",
-    "archived": false,
+    "timestamp": "2026-09-17T20:38:03.707Z",
+    "archived": true,
     "orbs": [
         {
             "id": 1789677461787,
