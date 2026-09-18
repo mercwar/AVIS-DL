@@ -8803,7 +8803,7 @@
             "starType": "Stargate Uplink",
             "name": "Quasar-2",
             "modeType": "stargate",
-            "url": "index.php?sg=https%3A%2F%2Fraw.githubusercontent.com%2Fmercwar%2FAVIS-DL%2Fmain%2Fsg%2F2026%2F09%2F18%2FKEY-DEFAULT%2F01-Constellation-json.sg",
+            "url": "index.php?sg=AVIS-DL%2Fmain%2Fsg%2F2026%2F09%2F18%2FKEY-DEFAULT%2F01-Constellation-json.sg",
             "timestamp": "2026-09-18T04:08:40.042Z",
             "keycode": "KEY-DEFAULT"
         },
