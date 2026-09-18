@@ -8803,7 +8803,7 @@
             "starType": "Stargate",
             "name": "Stargate Tutorial",
             "modeType": "sg",
-            "url": "https://cron.iblogger.org/Stargate/index.php?sg=https%3A%2F%2Fraw.githubusercontent.com%2Fmercwar%2FAVIS-DL%2Fmain%2Fsg%2F2026%2F09%2F18%2FKEY-DEFAULT%2F01-Constellation-json.sg",
+            "url": "2026%2F09%2F18%2FKEY-DEFAULT%2F01-Constellation-json.sg",
             "rawHtml": "",
             "timestamp": "2026-09-18T04:47:23.987Z",
             "keycode": "KEY-DEFAULT"
