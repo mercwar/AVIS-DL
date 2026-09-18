@@ -8800,10 +8800,10 @@
             "z": 1,
             "color": "#fbff00",
             "size": 50,
-            "starType": "Quasar Uplink",
+            "starType": "Stargate Uplink",
             "name": "Quasar-2",
-            "modeType": "quasar",
-            "url": "https://mercwar.github.io/Quasar/index.html?quasar=AVIS-DL%2Fdl%2F2026%2F09%2F14%2F9-Tutorial.quasar",
+            "modeType": "stargate",
+            "url": "index.php?sg=https%3A%2F%2Fraw.githubusercontent.com%2Fmercwar%2FAVIS-DL%2Fmain%2Fsg%2F2026%2F09%2F18%2FKEY-DEFAULT%2F01-Constellation-json.sg",
             "timestamp": "2026-09-18T04:08:40.042Z",
             "keycode": "KEY-DEFAULT"
         },
