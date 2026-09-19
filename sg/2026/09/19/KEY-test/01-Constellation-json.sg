@@ -4401,7 +4401,7 @@
             "starType": "Quasar Proportioned Core Node",
             "name": "Quasar-1",
             "modeType": "sg",
-            "url": "",
+            "url": "AVIS-DL/main/sg/2026/09/18/KEY-DEFAULT/01-Constellation-json.sg",
             "rawHtml": "test 1",
             "timestamp": "2026-09-19T16:12:47.309Z",
             "keycode": "KEY-DEFAULT"
@@ -8803,7 +8803,7 @@
             "starType": "Quasar Proportioned Core Node",
             "name": "Quasar-2",
             "modeType": "sg",
-            "url": "",
+            "url": "AVIS-DL/main/sg/2026/09/18/KEY-DEFAULT/01-Constellation-json.sg",
             "rawHtml": "test 2",
             "timestamp": "2026-09-19T16:12:48.016Z",
             "keycode": "KEY-DEFAULT"
@@ -13205,7 +13205,7 @@
             "starType": "Quasar Proportioned Core Node",
             "name": "Quasar-3",
             "modeType": "sg",
-            "url": "",
+            "url": "AVIS-DL/main/sg/2026/09/18/KEY-DEFAULT/01-Constellation-json.sg",
             "rawHtml": "test 3",
             "timestamp": "2026-09-19T16:12:48.863Z",
             "keycode": "KEY-DEFAULT"
