@@ -4398,10 +4398,10 @@
             "z": -5,
             "color": "#fbff00",
             "size": 50,
-            "starType": "Quasar Proportioned Core Node",
+            "starType": "Quasar",
             "name": "Quasar-1",
-            "modeType": "sg",
-            "url": "https://mercwar.github.io/Constellation/",
+            "modeType": "quasar",
+            "url": "AVIS-DL/dl/2026/09/14/9-Tutorial.quasar",
             "rawHtml": "",
             "timestamp": "2026-09-18T04:08:37.909Z",
             "keycode": "KEY-DEFAULT"
@@ -8794,17 +8794,17 @@
                     "speedY": 0.005000000000000000104083408558608425664715468883514404296875,
                     "speedZ": 0.003599999999999999901467706564517357037402689456939697265625
                 }
+				AVIS-DL%2Fmain%2Fsg%2F2026%2F09%2F19%2FKEY-test%2F01-Constellation-json.sg
             ],
             "x": 3,
             "y": 5,
             "z": 1,
             "color": "#fbff00",
             "size": 50,
-            "starType": "Quasar Uplink",
+            "starType": "Stargate Uplink",
             "name": "Quasar-2",
-            "modeType": "quasar",
-            "url": "http://mercwar.github.io/Quasar/index.html?quasar=AVIS-DL%2Fdl%2F2026%2F09%2F14%2F9-Tutorial.quasar",
-            "rawHtml": "",
+            "modeType": "sg",
+            "url": "AVIS-DL/main/sg/2026/09/19/KEY-test/01-Constellation-json.sg",
             "timestamp": "2026-09-18T04:08:40.042Z",
             "keycode": "KEY-DEFAULT"
         },
