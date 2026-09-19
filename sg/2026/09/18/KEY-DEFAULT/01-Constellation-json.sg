@@ -8794,6 +8794,7 @@
                     "speedY": 0.005000000000000000104083408558608425664715468883514404296875,
                     "speedZ": 0.003599999999999999901467706564517357037402689456939697265625
                 }
+				AVIS-DL%2Fmain%2Fsg%2F2026%2F09%2F19%2FKEY-test%2F01-Constellation-json.sg
             ],
             "x": 3,
             "y": 5,
@@ -8803,7 +8804,7 @@
             "starType": "Stargate Uplink",
             "name": "Quasar-2",
             "modeType": "sg",
-            "url": "AVIS-DL/main/sg/2026/09/18/KEY-DEFAULT/01-Constellation-json.sg",
+            "url": "AVIS-DL/main/sg/2026/09/19/KEY-test/01-Constellation-json.sg",
             "timestamp": "2026-09-18T04:08:40.042Z",
             "keycode": "KEY-DEFAULT"
         },
