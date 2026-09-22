@@ -154,61 +154,63 @@
     </style>
 </head>
 <body>
-
 <div class="wrapper">
     <div id="errorState"></div>
     <div id="loadingState">OPENING SYSTEM DATA MATRIX // Downlink NODE 2...</div>
-    
 
     <div class="panel" id="tutorialPanel" style="display: none;">
         <header>
             <div>
                 <h1 id="tutSubject">System Matrix Tutorial</h1>
-                 <h2 >Quasar Portal Menu: </h2>
-                 <h3 >Note: <br>
-                     <ul>
-                     <li> This menu is required to provide Quasar to Gateway networking .</li><br>
-                    <li>   You must create your own menu links in a quasar to offer exit portals.</h3></li><br>
+                <h2>Quasar Portal Menu:</h2>
+                <h3>Note:</h3>
+                <ul>
+                    <li>This menu is required to provide Quasar to Gateway networking.</li>
+                    <li>You must create your own menu links in a Quasar to offer exit portals.</li>
                 </ul>
                 <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px;">
-                    Realm Context: <span id="tutRealm" style="color: #ffffff;"></span><br>
+                    Realm : <span id="tutRealm" style="color: #ffffff;"></span><br>
+					<br>
+                    Last uplink: Back to the Official <a href="https://cron.iblogger.org/NEXUS" class="custom-text-link">NEXUS</a> Gateway<br>
+                    Last uplink: Back to the Official <a href="https://cron.iblogger.org/AVIS-DATALAKE" class="custom-text-link">AVIS-DATALAKE</a> Star Map Explorer<br>
+                    Next uplink: Back to the Official <a href="https://cron.iblogger.org/Stargate" class="custom-text-link">Stargate</a><br>
                     This uplink: Back to the Official <a href="https://github.com/mercwar/AVIS-DL" class="custom-text-link">AVIS-DL</a> Repository<br>
                     This uplink: Back to the Official <a href="../../../../README.md" class="custom-text-link">AVIS-DL</a> Readme<br>
-                    Last uplink: Back to the Official <a href="https://cron.iblogger.org/NEXUS" class="custom-text-link">NEXUS</a> Gateway<br>
-                   Last uplink: Back to the Official <a href="https://cron.iblogger.org/AVIS-DATALAKE" class="custom-text-link">AVIS-DATALAKE</a> Star Map Explorer<br>
                     Next uplink: Back to the Official <a href="https://mercwar.github.io/Constellation" class="custom-text-link">Constellation</a> Gateway<br>
                 </div>
             </div>
             <div class="meta-stamp">
                 Artifact Node: 2-tutorial<br>
                 Sync Stamp: <span id="tutModified"></span>
-                
             </div>
         </header>
 
-<div class="disclaimer-box">
-    <strong>USER INTERFACE & DATA STORAGE:</strong><br>
-    <br>
-    This environment operates with open access and does not require a login, there are no user-level profiles or management features. Every uploaded record, artifact, and file is saved with a <i>Permanent Face</i>. New artifact submissions are the only methods available to correct Stargate errors.<br>
-    <br>
-    File alterations are impossible. The system does not utilize <u>user names</u>, <u>passwords</u>, or <u>security pins</u>. Once processed, your file will immediately become available to the Quasar Applicaiton, resulting in either an VISIBLE STARGATE or NO VISIBLE GATE.<br>
-    <br>
-    Any file that crashes a Gate must be saved as a NEW record, artifact, or file in the AVIS-DATALAKE along with the resulting crashed file chain using a different auto index that is applied when you save the files.<br>
-    This means crashes file chains need to be uploaded in full within a different range of index. This can only be done in the AVIS-DATLAKE Star Map Explorer by submitting a new list of <i>Permanently Faced</i> files individually.<br>
-    <br>
-    This is the File format:<br>
-    <code>[provided decimal number as auto index]-[title]-[protocol file extension if requested].[requested extension, otherwise json]</code>
-</div>
+        <div class="disclaimer-box">
+            <strong>USER INTERFACE & DATA STORAGE:</strong><br><br>
+            This Quasar Stargate has open access and does not require a login. There are no user-level profiles or management features. Every uploaded record, artifact, and file is saved with a <i>Permanent Face</i>. New artifact submissions are the only methods available to correct Stargate errors.<br><br>
+            File alterations are impossible. The system does not utilize <u>user names</u>, <u>passwords</u>, or <u>security pins</u>. Once processed, your file will immediately become available to the Quasar Application, resulting in either a VISIBLE STARGATE or NO VISIBLE GATE.<br><br>
+            Any file that crashes a Gate must be saved as a NEW record, artifact, or file in the AVIS-DATALAKE along with the resulting crashed file chain using a different auto index that is applied when you save the files.<br>
+            This means crashed file chains need to be uploaded in full within a different range of index.<br>
+            The supporting application is the AVIS-DATALAKE Star Map Explorer.<br>
+            By submitting a new list of <i>Permanently Faced</i> files individually, you would revise your quasar into a new artifact, only keeping the files that function properly.<br><br>
+            The reason that these files are faced with a one-way door is simple: Avis-Datalake Free Pages does not ask you for your user name and password, so these records must be secure.<br>
+            Stargate allows for saving the file. If you do not give away your keycode when saving Stargates, it is virtually impossible for the gate to be hacked. The Keycode acts as a temporary password<br>
+            that waits for you to archive it. Once archived, you can give out the keycode. The Stargate includes Quasar pages, and the Quasar pages may link to Stargates with URL records.<br><br>
+            Stargate records, `.sg` files, have a Keycode feature that allows them to be saved without archiving the artifact as well as being saved as an archived artifact and creating a <i>Permanent Face</i> for the Artifact listed in Nexus.<br><br>
+            While `.quasar` files are not necessary to create HTML/DHTML applications on Avis-Datalake Free Pages and Stargate because Stargate files do allow for dynamic HTML content `.quasar` files are the only way to manage these web applications by way of Avis-Datalake Free Pages.<br><br>
+            This is the File format:<br>
+            <code>[provided decimal number as auto index]-[title]-[protocol file extension if requested].[requested extension, otherwise json]</code>
+        </div>
 
-
-
-        <h2>Parsed Tutorial Resource Records (Single Payload Source Execution)</h2>
+        <h1>Avis-Datalake Free Pages HTML/JSON/cyborg,...</h1>
+        <h2>Note:<br> The script in this page that uses <code>const FileData = await fetch('2-tutorial.json')</code> <br> is the script necessary to use Avis-Datalake free pages.</h2>
+        <h3>This is a literal tutorial. The tutorial resource for the table below is downlinked by the HTML script in this HTML page.</h3>
+        
         <table id="dataTable">
             <!-- DHTML Grid Injection Point -->
         </table>
     </div>
 </div>
-
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         loadDataLakeResource();
