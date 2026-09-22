@@ -17,61 +17,8 @@
     "stream_class": "adl_development_avis",
     "runtime_ecosystem": "web-personal-profile",
     "alpha": "json",
-    "payload_content": "## Publishing Guide: Quasar, Cyborg, .sg Files & AVIS-Datalake Free Pages
-
----
-
-### Introduction: The Unified Publishing Architecture
-
-Deploying applications across the **AVIS-Datalake** ecosystem relies on a strict, first-principles separation between tracking manifests and raw companion assets. Because the ecosystem operates with open access—requiring no user profiles, logins, or passwords—all deployed records receive a **Permanent Face** on GitHub immediately upon submission.
-
----
-
-### Step-by-Step Publishing Pipeline
-
-#### Step 1: Prepare Your Core Index Tracking Entry (`.json`)
-
-* The system initiates every asset registration by generating a main tracking manifest ending in `.json`.
-* This file logs essential system paths, developer metadata, security parameters, and precise timestamps to build an immutable history of your asset's journey.
-* **File Naming Format:** Ensure your naming strictly adheres to the auto-index schema:
-`[auto_index]-[title]-[protocol_extension].[requested_extension]`
-
-#### Step 2: Separate Your Companion Artifacts (`.html`, `.cyborg`, `.sg`)
-
-* Choose your target file extension (`.html`, `.cyborg`, `.sg`, `.json`, `.csv`, `.md`, `.js`, `.css`, or `.txt`).
-* Extract your raw code or markup away from the tracking manifest. Never embed large layouts or escaped text blocks directly inside a JSON string field, as this causes double-encoding and parsing failures.
-* Keep your main tracking manifest completely independent from your raw companion files.
-
-#### Step 3: Configure Quasar & Stargate Interoperability
-
-* **.sg Files (Stargate Records):** Utilize the built-in **Keycode** feature. This allows `.sg` files to be saved as temporary working states without immediate archiving, acting like a secure, temporary password until you are ready to publish.
-* **.quasar Files:** While `.quasar` files are not strictly required to deploy raw HTML/DHTML applications, they act as the mandatory management layer for orchestrating web applications across AVIS-Datalake Free Pages.
-* **Quasar Portal Menus:** Create explicit navigation links inside your Quasar pages to establish exit portals back to gateways (such as Nexus, Stargate, and Constellation).
-
-#### Step 4: Asynchronous Stream Extraction (AJAX)
-
-* Front-end modules utilize direct asynchronous fetches to ingest your data files smoothly in the background without forcing full-page reloads.
-* Implement the core data-downlinking call directly within your page script:
-```javascript
-const response = await fetch('2-tutorial.json');
-const FileData = await response.json();
-
-```
-
-
-
----
-
-### Critical Pipeline Rules & Remediation
-
-* **Immutability Law:** File alterations or overrides are **impossible**. Once processed and committed, the path is permanent.
-* **Pipeline Mismatch Remediation:** If a deployment contains an error, typo, or crashes a gate, you cannot edit the existing record. You must correct your inputs in the submission form and deploy a **brand-new file entry** under a fresh auto-index range.
-* **Fallback Formatter Configuration:** If your alpha input option is left blank or missing, the engine bypasses the dual-file splitting process entirely, defaulting to a single master metadata `.json` entry.
-
----
-
-Would you like to generate the specific batch script or manifest configuration required to automate your next AVIS-Datalake deployment sequence?",
-	},
+    "payload_content": "# Publishing Guide\n### Quasar • Cyborg • `.sg` Files • AVIS‑Datalake Free Pages\n\n---\n\n## 🌌 Unified Publishing Architecture\n\nDeploying applications across the **AVIS‑Datalake** ecosystem requires a strict separation between:\n\n- **Tracking manifests**  \n- **Companion artifacts**\n\nBecause AVIS‑Datalake operates with **open access** (no usernames, passwords, or profiles), every submitted record receives a **Permanent Face** on GitHub immediately upon deployment.\n\nThis ensures:\n\n- Immutable history  \n- Secure lineage  \n- Transparent artifact tracking\n\n---\n\n# 🚀 Publishing Pipeline\n\n## 1. Create Your Core Tracking Manifest (`.json`)\n\nYour deployment always begins with a master tracking entry.\n\nThis file:\n\n- Defines system paths  \n- Stores developer metadata  \n- Logs timestamps  \n- Establishes immutable history\n\n### **Required Naming Format**\n\n```\n[auto_index]-[title]-[protocol_extension].[requested_extension]\n```\n\n---\n\n## 2. Separate Your Companion Artifacts\n\nChoose your companion file type:\n\n| Artifact Type | Purpose |\n|---------------|---------|\n| `.html`       | Raw UI / DHTML |\n| `.cyborg`     | AVIS‑DL structured application |\n| `.sg`         | Stargate record with Keycode |\n| `.json`       | Metadata manifest |\n| `.csv`        | Data tables |\n| `.md`         | Documentation |\n| `.js`         | Scripts |\n| `.css`        | Stylesheets |\n| `.txt`        | Raw text |\n\n### **Rules**\n\n- Never embed large HTML/JS inside JSON  \n- Avoid escaped markup blocks  \n- Prevent double‑encoding  \n- Keep JSON clean and metadata‑only\n\n---\n\n## 3. Configure Quasar ↔ Stargate Interoperability\n\n### `.sg` Files (Stargate Records)\n\nUse the **Keycode** feature:\n\n- Allows temporary saves  \n- Acts like a secure password  \n- Becomes permanent only when archived\n\n### `.quasar` Files\n\nMandatory for:\n\n- Managing web applications  \n- Linking portals  \n- Controlling navigation  \n- Maintaining Quasar → Gateway interoperability\n\n### Quasar Portal Menus\n\nDefine explicit exit portals:\n\n- Nexus  \n- Stargate  \n- Constellation  \n- AVIS‑DL\n\n---\n\n## 4. Asynchronous Stream Extraction (AJAX)\n\nFront‑end modules ingest your artifacts using async fetch calls:\n\n```javascript\nconst response = await fetch('2-tutorial.json');\nconst FileData = await response.json();\n```\n\nThis enables:\n\n- Background loading  \n- Zero reloads  \n- Smooth Stargate transitions\n\n---\n\n# ⚠️ Critical Pipeline Rules\n\n## Immutability Law\n\nOnce deployed, files **cannot** be edited or overwritten.  \nEvery artifact is permanent.\n\n## Error Remediation\n\nIf a deployment:\n\n- Contains a typo  \n- Crashes a gate  \n- Has malformed metadata\n\nYou must submit a **new file** under a **new auto‑index**.\n\nExisting records cannot be altered.\n\n## Fallback Behavior\n\nIf `alpha` is blank:\n\n- Engine bypasses dual‑file splitting  \n- A single master `.json` manifest is created  \n- No companion artifact is generated\n\n---\n\n# 🧭 Next Steps\n\nWould you like to generate:\n\n- **A batch script** for automated AVIS‑DL deployment  \n- **A full manifest template** for your next artifact  \n- **A Quasar portal menu generator**  \n- **A Stargate `.sg` Keycode initializer**\n\nChoose one and I’ll build it."
+  },
   "usage": {
     "notes": "Tutorial"
   },

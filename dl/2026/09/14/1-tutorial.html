@@ -82,40 +82,21 @@
             font-weight: 500;
         }
 
-        table {
+        /* Replaced table grid with clean content display container */
+        .content-viewport {
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 32px;
             background-color: var(--bg-main);
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            overflow: hidden;
-        }
-
-        th {
-            background-color: #1f242c;
-            color: #ffffff;
-            text-align: left;
-            padding: 14px 16px;
+            padding: 24px;
+            box-sizing: border-box;
+            color: var(--text-primary);
             font-size: 14px;
-            font-weight: 600;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        td {
-            padding: 12px 16px;
-            font-size: 14px;
-            border-bottom: 1px solid var(--border-color);
-            line-height: 1.5;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        tr:hover td {
-            color: var(--text-link);
-            background-color: rgba(56, 139, 253, 0.02);
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin-bottom: 32px;
         }
 
         #loadingState {
@@ -137,20 +118,20 @@
             font-family: monospace;
             white-space: pre-wrap;
         }
+
         .custom-text-link {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2563eb; /* Modern Blue */
-  text-decoration: none;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
 
-.custom-text-link:hover {
-  color: #1d4ed8; /* Darker Blue */
-  border-bottom-color: #1d4ed8;
-}
-
+        .custom-text-link:hover {
+            color: #1d4ed8;
+            border-bottom-color: #1d4ed8;
+        }
     </style>
 </head>
 <body>
@@ -170,7 +151,7 @@
                 </ul>
                 <div style="font-size: 13px; color: var(--text-muted); margin-top: 6px;">
                     Realm : <span id="tutRealm" style="color: #ffffff;"></span><br>
-					<br>
+                    <br>
                     Last uplink: Back to the Official <a href="https://cron.iblogger.org/NEXUS" class="custom-text-link">NEXUS</a> Gateway<br>
                     Last uplink: Back to the Official <a href="https://cron.iblogger.org/AVIS-DATALAKE" class="custom-text-link">AVIS-DATALAKE</a> Star Map Explorer<br>
                     Next uplink: Back to the Official <a href="https://cron.iblogger.org/Stargate" class="custom-text-link">Stargate</a><br>
@@ -204,91 +185,75 @@
 
         <h1>Avis-Datalake Free Pages HTML/JSON/cyborg,...</h1>
         <h2>Note:<br> The script in this page that uses <code>const FileData = await fetch('2-tutorial.json')</code> <br> is the script necessary to use Avis-Datalake free pages.</h2>
-        <h3>This is a literal tutorial. The tutorial resource for the table below is downlinked by the HTML script in this HTML page.</h3>
+        <h3>This is a literal tutorial. The tutorial resource displayed below is downlinked directly from the JSON payload.</h3>
         
-        <table id="dataTable">
-            <!-- DHTML Grid Injection Point -->
-        </table>
+
+        <!-- Markdown-rendered content -->
+        <div id="contentDisplay" class="content-viewport"></div>
     </div>
 </div>
+
+<!-- ⭐ Markdown Renderer (Showdown.js) -->
+<script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        loadDataLakeResource();
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    loadDataLakeResource();
+});
 
-    async function loadDataLakeResource() {
-        const loadingEl = document.getElementById('loadingState');
-        const panelEl   = document.getElementById('tutorialPanel');
-        const errorEl   = document.getElementById('errorState');
+async function loadDataLakeResource() {
+    const loadingEl = document.getElementById('loadingState');
+    const panelEl   = document.getElementById('tutorialPanel');
+    const errorEl   = document.getElementById('errorState');
 
-        try {
-            // Asynchronously query the master JSON record entry
-            const response = await fetch('2-tutorial.json');
+    try {
+        const response = await fetch('2-tutorial.json');
 
-            if (!response.ok) {
-                throw new Error(`AJAX Handshake Failed [HTTP ${response.status}]: ${response.statusText}`);
-            }
-
-            const manifest = JSON.parse(await response.text());
-            
-            // Populate tracking data labels from your exact form keys
-            document.getElementById('tutSubject').textContent  = `System Matrix: ${manifest.file?.title || 'Datalake Node'}`;
-            document.getElementById('tutRealm').textContent    = manifest.home?.realm || 'AVIS-CORE';
-            document.getElementById('tutModified').textContent = manifest.modified ? manifest.modified.substring(0, 19).replace('T', ' ') : 'ACTIVE';
-
-            // TARGET SPEC: Open the single payload content block cleanly
-            const rawCsvContent = manifest.home?.payload_content || '';
-            
-            if (!rawCsvContent) {
-                throw new Error("Target field 'home.payload_content' is empty or unavailable.");
-            }
-
-            buildDhtmlGrid(rawCsvContent);
-
-            loadingEl.style.display = 'none';
-            panelEl.style.display = 'block';
-
-        } catch (fault) {
-            loadingEl.style.display = 'none';
-            errorEl.style.display = 'block';
-            errorEl.textContent = `[AVIS CONNECTOR REJECTION]\n\n${fault.message}\n\nEnsure '2-tutorial.json' resides in the same root folder destination.`;
+        if (!response.ok) {
+            throw new Error(`AJAX Handshake Failed [HTTP ${response.status}]: ${response.statusText}`);
         }
-    }
 
-    function buildDhtmlGrid(csvDataString) {
-        const table = document.getElementById('dataTable');
-        table.innerHTML = ''; 
+        const manifest = JSON.parse(await response.text());
 
-        // Split the plain text rows down cleanly by line breaks
-        const lines = csvDataString.split(/\r?\n/).map(row => row.trim()).filter(row => row.length > 0);
-        if (lines.length === 0) return;
+        document.getElementById('tutSubject').textContent =
+            `System Matrix: ${manifest.file?.title || 'Datalake Node'}`;
 
-        // Construct headers
-        const headerTr = document.createElement('tr');
-        const headers = lines[0].split(',');
-        headers.forEach(headerText => {
-            const th = document.createElement('th');
-            th.textContent = headerText.replace(/_/g, ' ');
-            headerTr.appendChild(th);
+        document.getElementById('tutRealm').textContent =
+            manifest.home?.realm || 'AVIS-CORE';
+
+        document.getElementById('tutModified').textContent =
+            manifest.modified ? manifest.modified.substring(0, 19).replace('T', ' ') : 'ACTIVE';
+
+        const payloadText = manifest.home?.payload_content || '';
+
+        if (!payloadText) {
+            throw new Error("Target field 'home.payload_content' is empty or unavailable.");
+        }
+
+        // ⭐ Convert Markdown → HTML
+        const converter = new showdown.Converter({
+            tables: true,
+            simplifiedAutoLink: true,
+            strikethrough: true,
+            ghCodeBlocks: true,
+            tasklists: true
         });
-        table.appendChild(headerTr);
 
-        // Populate table lines row-by-row
-        for (let i = 1; i < lines.length; i++) {
-            // Safe parser tracking internal commas inside quotes
-            const cells = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || lines[i].split(',');
-            const tr = document.createElement('tr');
-            
-            cells.forEach(cellText => {
-                const td = document.createElement('td');
-                // Clean off wrapping quotes from raw textual columns
-                td.textContent = cellText.replace(/^"|"$/g, '').replace(/\\n/g, '\n');
-                tr.appendChild(td);
-            });
-            
-            table.appendChild(tr);
-        }
+        const html = converter.makeHtml(payloadText);
+
+        // ⭐ Inject rendered HTML
+        document.getElementById('contentDisplay').innerHTML = html;
+
+        loadingEl.style.display = 'none';
+        panelEl.style.display = 'block';
+
+    } catch (fault) {
+        loadingEl.style.display = 'none';
+        errorEl.style.display = 'block';
+        errorEl.textContent =
+            `[AVIS CONNECTOR REJECTION]\n\n${fault.message}\n\nEnsure '2-tutorial.json' resides in the same root folder destination.`;
     }
+}
 </script>
 
 </body>
