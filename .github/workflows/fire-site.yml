@@ -1,0 +1,19 @@
+name: TRON::SITEMAP
+
+on:
+  workflow_dispatch: # This enables the manual "Run workflow" button
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Sitemap Script
+        env:
+          GITHUB_ACTIONS: "true"
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+        run: |
+          chmod +x fire-site.sh
+          ./fire-site.sh
