@@ -1,12 +1,6 @@
 #!/bin/bash
-# IDENTITY: VERSION 4.2 // FIRE-SITE // CVBGOD fire-site.sh
-# ROLE: Dynamic Root-Only Sitemap Generation with URL Encoding for Version 1 Spaces.
-
-# Check if running in GitHub Actions and ensure it was triggered manually (workflow_dispatch)
-if [ "$GITHUB_ACTIONS" = "true" ] && [ "$GITHUB_EVENT_NAME" != "workflow_dispatch" ]; then
-    echo "Skipping sitemap generation: This script is configured to only run on manual (workflow_dispatch) triggers."
-    exit 0
-fi
+# IDENTITY: VERSION 3.8 // FIRE-SITE // CVBGOD fire-site.sh
+# ROLE: Dynamic Sitemap Generation with URL Encoding for Version 1 Spaces.
 
 # 1. Get the base GitHub URL from your git config
 REPO_URL=$(git config --get remote.origin.url | sed 's/\.git$//' | sed 's/git@github.com:/https:\/\/github.com\//')
@@ -19,11 +13,10 @@ echo "Generating sitemap for: ${BASE_URL}"
 
 # 2. Start the XML structure
 echo '<?xml version="1.0" encoding="UTF-8"?>' > $OUTPUT_FILE
-echo '<urlset xmlns="http://sitemaps.org">' >> $OUTPUT_FILE
+echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> $OUTPUT_FILE
 
-# 3. Find files only at the root level (no recursion)
-# -maxdepth 1: limit scanning to root | -type f: only files | -not -name '.*': skip hidden configuration files
-find . -maxdepth 1 -type f -not -name '.*' | while read -r file; do
+# 3. Find only root files (maxdepth 1)
+find . -maxdepth 1 -type f -not -path '*/.git/*' | while read -r file; do
     # Remove the leading './'
     CLEAN_PATH="${file#./}"
     
