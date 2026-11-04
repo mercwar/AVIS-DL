@@ -1,0 +1,27 @@
+{
+    "method": "add",
+    "id": "GUID-{1068812346-17999-28728}",
+    "file": {
+        "title": "automated_telemetry_packet"
+    },
+    "owner": {
+        "system_id": "SYS-DATALAKE-ALPHA",
+        "team": "Operations",
+        "contact_email": "admin@mercwar.ai"
+    },
+    "lifecycle": {
+        "version": "v1.0.0"
+    },
+    "usage": {
+        "context": "win32_x64",
+        "purpose": "local_tooling",
+        "frequency": "random",
+        "notes": "Automated ingest sync"
+    },
+    "home": {
+        "realm": "AVIS-PRIMARY-CORE",
+        "alpha": "json",
+        "payload_content": "Operational uplink verified via JSON input stream"
+    },
+    "modified": "2026-11-04T04:48:27-05:00"
+}
