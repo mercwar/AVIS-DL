@@ -17,6 +17,21 @@ Each glowing star represents a metadata form. When you click a star, the form op
 
 👉 **[View Live Publishing Tutorial](https://mercwar.github.io/AVIS-DL/dl/2026/09/14/1-tutorial.html)**
 
+After installing [dc2url](https://github.com/mercwar/dc2url) this will work in your command prompt , then goto [Nexus](https://github.com/mercwar/NEXUS) for your file.
+
+```markdown
+dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Type: application/json" -d "{\"id\":\"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\"method\":\"add\",\"file\":{\"title\":\"atom-node-01-stream\",\"type\":\"html\"},\"home\":{\"realm\":\"AVIS-PRIMARY-CORE\",\"host_node\":\"ATOM-NODE-01\",\"stream_class\":\"adl_development_avis\",\"runtime_ecosystem\":\"web-personal-profile\",\"alpha\":\"html\",\"payload_content\":\"Raw buffer stream data...\"}}"
+```
+```markdown
+dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Type: application/json" -d "{\"id\":\"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\"method\":\"add\",\"file\":{\"title\":\"atom-node-01-stream\",\"type\":\"html\"},\"home\":{\"realm\":\"AVIS-PRIMARY-CORE\",\"host_node\":\"ATOM-NODE-01\",\"stream_class\":\"adl_development_avis\",\"runtime_ecosystem\":\"web-personal-profile\",\"alpha\":\"html\",\"payload_content\":\"\u003ch2\u003eATOM-NODE-01\u003c/h2\u003e\u003cp\u003eRaw buffer stream data...\u003c/p\u003e\"}}"
+```
+```markdown
+dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Type: application/json" -d "{\"id\":\"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\"method\":\"add\",\"file\":{\"title\":\"atom-node-01-stream\",\"type\":\"html\"},\"home\":{\"realm\":\"AVIS-PRIMARY-CORE\",\"host_node\":\"ATOM-NODE-01\",\"stream_class\":\"adl_development_avis\",\"runtime_ecosystem\":\"web-personal-profile\",\"alpha\":\"html\",\"payload_content\":\"\u003cfieldset\u003e\u003clegend\u003e\u003cb\u003eAVIS DATALAKE TUTORIAL :: ATOM-NODE-01\u003c/b\u003e\u003c/legend\u003e\u003ch2\u003eHTML Stream Uplink\u003c/h2\u003e\u003cp\u003eThis HTML payload was transmitted directly via \u003ccode\u003edc2url\u003c/code\u003e JSON POST.\u003c/p\u003e\u003chr\u003e\u003ctable border=1 cellpadding=6 cellspacing=0\u003e\u003ctr\u003e\u003cth\u003eRealm\u003c/th\u003e\u003ctd\u003eAVIS-PRIMARY-CORE\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eHost Node\u003c/th\u003e\u003ctd\u003eATOM-NODE-01\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eStream Class\u003c/th\u003e\u003ctd\u003eadl_development_avis\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/fieldset\u003e\"}}"
+```
+```markdown
+dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Type: application/json" -d "{\"id\":\"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\"method\":\"add\",\"file\":{\"title\":\"atom-node-01-stream\",\"type\":\"html\"},\"home\":{\"realm\":\"AVIS-PRIMARY-CORE\",\"host_node\":\"ATOM-NODE-01\",\"stream_class\":\"adl_development_avis\",\"runtime_ecosystem\":\"web-personal-profile\",\"alpha\":\"html\",\"payload_content\":\"\u003ctable bgcolor=black border=2 bordercolor=cyan cellpadding=12 cellspacing=0\u003e\u003ctr\u003e\u003ctd\u003e\u003cfont color=cyan\u003e\u003cb\u003eAVIS DATALAKE TUTORIAL :: ATOM-NODE-01\u003c/b\u003e\u003c/font\u003e\u003ch2\u003e\u003cfont color=white\u003eHTML Stream Uplink\u003c/font\u003e\u003c/h2\u003e\u003cp\u003e\u003cfont color=silver\u003eTransmitted via \u003c/font\u003e\u003cfont color=lime\u003e\u003ccode\u003edc2url\u003c/code\u003e\u003c/font\u003e\u003cfont color=silver\u003e JSON POST.\u003c/font\u003e\u003c/p\u003e\u003ctable bgcolor=navy border=1 bordercolor=cyan cellpadding=6 cellspacing=0\u003e\u003ctr\u003e\u003cth\u003e\u003cfont color=cyan\u003eRealm\u003c/font\u003e\u003c/th\u003e\u003ctd\u003e\u003cfont color=white\u003eAVIS-PRIMARY-CORE\u003c/font\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e\u003cfont color=cyan\u003eHost Node\u003c/font\u003e\u003c/th\u003e\u003ctd\u003e\u003cfont color=lime\u003eATOM-NODE-01\u003c/font\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e\u003cfont color=cyan\u003eStream Class\u003c/font\u003e\u003c/th\u003e\u003ctd\u003e\u003cfont color=white\u003eadl_development_avis\u003c/font\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\"}}"
+
+```
 <a href="https://cron.iblogger.org/AVIS-DATALAKE">
   <img src="avis-dl.png" alt="AVIS Banner" style="border: none; max-width: 100%; height: auto;">
 </a>
@@ -143,7 +158,7 @@ Unlike multi‑petabyte enterprise data lakes, AVIS‑DL focuses on zero‑nesti
 | Data Separation Strategy | Twin‑File Rule: `.json` manifest + raw native asset              | Unified open table format over deep object file paths         | Staged bucket zones (Raw, Cleansed, Curated) over flat trees   |
 | Schema Paradigm          | Dual: schema‑on‑write manifest + schema‑on‑read front‑end        | Advanced schema enforcement & automatic schema evolution      | Strict schema‑on‑read; data remains raw until compute binds it |
 | Write Integrity & Safety | Permanent Face File Law; no modification or manual deletes       | Full ACID transactions                                        | Eventual consistency / versioning via API                     |
-| Access Control Barrier   | Public ingress; zero‑auth gateway                                | Enterprise RBAC, credential scopes, Unity Catalog             | IAM roles, AAD, ACLs                                          |
+| Access Control Barrier   | Public PHP API; zero‑auth gateway                                | Enterprise RBAC, credential scopes, Unity Catalog             | IAM roles, AAD, ACLs                                          |
 | Remediation Strategy     | Sequential pipeline versioning via new immutable entries         | Time Travel / data versioning for historic state queries      | Overwrite / modification via server processes                 |
 
 ---
