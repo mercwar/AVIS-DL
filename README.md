@@ -17,7 +17,17 @@ Each glowing star represents a metadata form. When you click a star, the form op
 
 👉 **[View Live Publishing Tutorial](https://mercwar.github.io/AVIS-DL/dl/2026/09/14/1-tutorial.html)**
 
+
+
+## 🧭 AVIS-DATALAKE TUTORIAL - PUSHING RECORDS YOURSELF
+
+Explore the complete implementation guides and step-by-step tutorials for the AVIS Datalake and Starmap system:
+* [Readme : AVIS-DATALAKE TUTORIAL AND API REFERENCE](https://github.com/mercwar/AVIS-DATALAKE/blob/main/avis-datalake/README.md) — ACCESSING THE AVIS DATALAKE YOURSELF
+
+
 After installing [dc2url](https://github.com/mercwar/dc2url) this will work in your command prompt , then goto [Nexus](https://github.com/mercwar/NEXUS) for your file.
+
+
 
 ```markdown
 dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Type: application/json" -d "{\"id\":\"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\"method\":\"add\",\"file\":{\"title\":\"atom-node-01-stream\",\"type\":\"html\"},\"home\":{\"realm\":\"AVIS-PRIMARY-CORE\",\"host_node\":\"ATOM-NODE-01\",\"stream_class\":\"adl_development_avis\",\"runtime_ecosystem\":\"web-personal-profile\",\"alpha\":\"html\",\"payload_content\":\"Raw buffer stream data...\"}}"
@@ -31,15 +41,13 @@ dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Ty
 ```markdown
 dc2url -X POST "https://cron.iblogger.org/AVIS-DATALAKE/avis.php" -H "Content-Type: application/json" -d "{\"id\":\"f47ac10b-58cc-4372-a567-0e02b2c3d479\",\"method\":\"add\",\"file\":{\"title\":\"atom-node-01-stream\",\"type\":\"html\"},\"home\":{\"realm\":\"AVIS-PRIMARY-CORE\",\"host_node\":\"ATOM-NODE-01\",\"stream_class\":\"adl_development_avis\",\"runtime_ecosystem\":\"web-personal-profile\",\"alpha\":\"html\",\"payload_content\":\"\u003ctable bgcolor=black border=2 bordercolor=cyan cellpadding=12 cellspacing=0\u003e\u003ctr\u003e\u003ctd\u003e\u003cfont color=cyan\u003e\u003cb\u003eAVIS DATALAKE TUTORIAL :: ATOM-NODE-01\u003c/b\u003e\u003c/font\u003e\u003ch2\u003e\u003cfont color=white\u003eHTML Stream Uplink\u003c/font\u003e\u003c/h2\u003e\u003cp\u003e\u003cfont color=silver\u003eTransmitted via \u003c/font\u003e\u003cfont color=lime\u003e\u003ccode\u003edc2url\u003c/code\u003e\u003c/font\u003e\u003cfont color=silver\u003e JSON POST.\u003c/font\u003e\u003c/p\u003e\u003ctable bgcolor=navy border=1 bordercolor=cyan cellpadding=6 cellspacing=0\u003e\u003ctr\u003e\u003cth\u003e\u003cfont color=cyan\u003eRealm\u003c/font\u003e\u003c/th\u003e\u003ctd\u003e\u003cfont color=white\u003eAVIS-PRIMARY-CORE\u003c/font\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e\u003cfont color=cyan\u003eHost Node\u003c/font\u003e\u003c/th\u003e\u003ctd\u003e\u003cfont color=lime\u003eATOM-NODE-01\u003c/font\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e\u003cfont color=cyan\u003eStream Class\u003c/font\u003e\u003c/th\u003e\u003ctd\u003e\u003cfont color=white\u003eadl_development_avis\u003c/font\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\"}}"
 
+
 ```
+
+
 <a href="https://cron.iblogger.org/AVIS-DATALAKE">
   <img src="avis-dl.png" alt="AVIS Banner" style="border: none; max-width: 100%; height: auto;">
 </a>
-
-## 🧭 AVIS-DATALAKE TUTORIAL - PUSHING RECORDS YOURSELF
-
-Explore the complete implementation guides and step-by-step tutorials for the AVIS Datalake and Starmap system:
-* [Readme : AVIS-DATALAKE TUTORIAL AND API REFERENCE](https://github.com/mercwar/AVIS-DATALAKE/blob/main/avis-datalake/README.md) — ACCESSING THE AVIS DATALAKE YOURSELF
 
 ---
 ##  👉  And NOW... the OFFICIAL AVIS-DL Readme !
