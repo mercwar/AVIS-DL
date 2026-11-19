@@ -1,0 +1,17 @@
+{
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "method": "add",
+    "file": {
+        "title": "atom-node-01-stream",
+        "type": "html"
+    },
+    "home": {
+        "realm": "AVIS-PRIMARY-CORE",
+        "host_node": "ATOM-NODE-01",
+        "stream_class": "adl_development_avis",
+        "runtime_ecosystem": "web-personal-profile",
+        "alpha": "html",
+        "payload_content": "[Externalized to companion HTML file asset]"
+    },
+    "modified": "2026-11-19T15:25:10-05:00"
+}
